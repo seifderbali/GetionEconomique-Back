@@ -1,0 +1,98 @@
+2023-03-09 12:48:28.397  INFO 781 --- [restartedMain] tn.esprit.PfeApplication                 : Starting PfeApplication using Java 15.0.2 on Derbalis-MacBook-Pro.local with PID 781 (/Users/seif/Desktop/PFE/target/classes started by seif in /Users/seif/Desktop/PFE)
+2023-03-09 12:48:28.408  INFO 781 --- [restartedMain] tn.esprit.PfeApplication                 : No active profile set, falling back to default profiles: default
+2023-03-09 12:48:28.722  INFO 781 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-09 12:48:28.722  INFO 781 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-09 12:48:30.577  INFO 781 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-09 12:48:30.717  INFO 781 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 8 JPA repository interfaces.
+2023-03-09 12:48:31.555  INFO 781 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-03-09 12:48:31.566  INFO 781 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-09 12:48:31.567  INFO 781 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-03-09 12:48:31.649  INFO 781 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2023-03-09 12:48:31.650  INFO 781 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2927 ms
+2023-03-09 12:48:31.887  INFO 781 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-09 12:48:31.952  INFO 781 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2023-03-09 12:48:32.191  INFO 781 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-09 12:48:32.340  INFO 781 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-09 12:48:32.527  INFO 781 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-09 12:48:32.545  INFO 781 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-09 12:48:33.410  INFO 781 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-09 12:48:33.419  INFO 781 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09 12:48:34.252  WARN 781 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-09 12:48:34.506  INFO 781 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-09 12:48:34.749  INFO 781 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api'
+2023-03-09 12:48:35.421  INFO 781 --- [restartedMain] tn.esprit.PfeApplication                 : Started PfeApplication in 7.829 seconds (JVM running for 9.275)
+2023-03-09 12:55:02.308  INFO 781 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-09 12:55:02.310  INFO 781 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-09 12:55:02.326  INFO 781 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2023-03-09 12:55:02.470 DEBUG 781 --- [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+    select
+        entitesi0_.id as id1_4_,
+        entitesi0_.name as name2_4_ 
+    from
+        entitesi entitesi0_
+2023-03-09 12:55:02.503  INFO 781 --- [http-nio-8081-exec-1] tn.esprit.services.EntiteSIService       : user = EntiteSI(id=1, name=derbali)
+2023-03-09 12:55:02.503  INFO 781 --- [http-nio-8081-exec-1] tn.esprit.services.EntiteSIService       : user = EntiteSI(id=5, name=neww)
+2023-03-09 12:55:04.666 DEBUG 781 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        fournisseu0_.id as id1_5_,
+        fournisseu0_.code as code2_5_,
+        fournisseu0_.contact as contact3_5_,
+        fournisseu0_.immat_fiscal as immat_fi4_5_,
+        fournisseu0_.mail as mail5_5_,
+        fournisseu0_.name as name6_5_,
+        fournisseu0_.site_web as site_web7_5_,
+        fournisseu0_.tel as tel8_5_ 
+    from
+        fournisseur fournisseu0_
+2023-03-09 12:55:04.677  INFO 781 --- [http-nio-8081-exec-2] tn.esprit.services.FournisseurService    : Fournisseur = Fournisseur(id=1, code=1, name=aa, immatFiscal=aa, contact=cc, mail=aa@aa.a, siteWeb=a, tel=1111)
+2023-03-09 12:55:04.677  INFO 781 --- [http-nio-8081-exec-2] tn.esprit.services.FournisseurService    : Fournisseur = Fournisseur(id=2, code=1111, name=111, immatFiscal=sss, contact=seif, mail=s@s.s, siteWeb=ss, tel=1212)
+2023-03-09 12:55:13.863 DEBUG 781 --- [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+    select
+        budgetinve0_.id as id1_0_,
+        budgetinve0_.budgetn as budgetn2_0_,
+        budgetinve0_.budgetn1 as budgetn3_0_,
+        budgetinve0_.budgetn2 as budgetn4_0_,
+        budgetinve0_.budgetn3 as budgetn5_0_,
+        budgetinve0_.anneebudgetaire as anneebud6_0_,
+        budgetinve0_.cout_etude_serv as cout_etu7_0_,
+        budgetinve0_.cout_logiciel as cout_log8_0_,
+        budgetinve0_.cout_materiel as cout_mat9_0_ 
+    from
+        budget_investissement budgetinve0_
+2023-03-09 12:55:13.894  INFO 781 --- [http-nio-8081-exec-3] t.e.s.BudgetInvestissementService        : user = BudgetInvestissement(id=1, anneebudgetaire=2021, coutLogiciel=500, coutMateriel=250, coutEtudeServ=1200, BudgetN=1000, BudgetN1=0, BudgetN2=0, BudgetN3=0)
+2023-03-09 12:55:13.899  INFO 781 --- [http-nio-8081-exec-3] t.e.s.BudgetInvestissementService        : user = BudgetInvestissement(id=2, anneebudgetaire=2023, coutLogiciel=1000, coutMateriel=20000, coutEtudeServ=500, BudgetN=30000, BudgetN1=100, BudgetN2=299, BudgetN3=3000)
+2023-03-09 13:01:18.405 DEBUG 781 --- [http-nio-8081-exec-5] org.hibernate.SQL                        : 
+    select
+        budgetinve0_.id as id1_0_,
+        budgetinve0_.budgetn as budgetn2_0_,
+        budgetinve0_.budgetn1 as budgetn3_0_,
+        budgetinve0_.budgetn2 as budgetn4_0_,
+        budgetinve0_.budgetn3 as budgetn5_0_,
+        budgetinve0_.anneebudgetaire as anneebud6_0_,
+        budgetinve0_.cout_etude_serv as cout_etu7_0_,
+        budgetinve0_.cout_logiciel as cout_log8_0_,
+        budgetinve0_.cout_materiel as cout_mat9_0_ 
+    from
+        budget_investissement budgetinve0_
+2023-03-09 13:01:18.461  INFO 781 --- [http-nio-8081-exec-5] t.e.s.BudgetInvestissementService        : user = BudgetInvestissement(id=1, anneebudgetaire=2021, coutLogiciel=500, coutMateriel=250, coutEtudeServ=1200, BudgetN=1000, BudgetN1=0, BudgetN2=0, BudgetN3=0)
+2023-03-09 13:01:18.462  INFO 781 --- [http-nio-8081-exec-5] t.e.s.BudgetInvestissementService        : user = BudgetInvestissement(id=2, anneebudgetaire=2023, coutLogiciel=1000, coutMateriel=20000, coutEtudeServ=500, BudgetN=30000, BudgetN1=100, BudgetN2=299, BudgetN3=3000)
+2023-03-09 13:02:11.508 DEBUG 781 --- [http-nio-8081-exec-6] org.hibernate.SQL                        : 
+    select
+        budgetinve0_.id as id1_0_,
+        budgetinve0_.budgetn as budgetn2_0_,
+        budgetinve0_.budgetn1 as budgetn3_0_,
+        budgetinve0_.budgetn2 as budgetn4_0_,
+        budgetinve0_.budgetn3 as budgetn5_0_,
+        budgetinve0_.anneebudgetaire as anneebud6_0_,
+        budgetinve0_.cout_etude_serv as cout_etu7_0_,
+        budgetinve0_.cout_logiciel as cout_log8_0_,
+        budgetinve0_.cout_materiel as cout_mat9_0_ 
+    from
+        budget_investissement budgetinve0_
+2023-03-09 13:02:11.512  INFO 781 --- [http-nio-8081-exec-6] t.e.s.BudgetInvestissementService        : user = BudgetInvestissement(id=1, anneebudgetaire=2021, coutLogiciel=500, coutMateriel=250, coutEtudeServ=1200, BudgetN=1000, BudgetN1=0, BudgetN2=0, BudgetN3=0)
+2023-03-09 13:02:11.512  INFO 781 --- [http-nio-8081-exec-6] t.e.s.BudgetInvestissementService        : user = BudgetInvestissement(id=2, anneebudgetaire=2023, coutLogiciel=1000, coutMateriel=20000, coutEtudeServ=500, BudgetN=30000, BudgetN1=100, BudgetN2=299, BudgetN3=3000)
+2023-03-09 14:31:22.079  WARN 781 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m18s753ms).
+2023-03-09 15:00:35.418  WARN 781 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m42s235ms).
+2023-03-09 15:54:07.213  INFO 781 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09 15:54:07.257  INFO 781 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-09 15:54:07.267  INFO 781 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
