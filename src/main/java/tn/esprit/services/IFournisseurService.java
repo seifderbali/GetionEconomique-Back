@@ -13,5 +13,7 @@ public interface IFournisseurService {
     Fournisseur updateFournisseur(Fournisseur f);
     Fournisseur retrieveFournisseur(long id);
     List<Fournisseur> searchFournisseur(String keyword);
+    Fournisseur findByContrat(long id);
+
 }
 

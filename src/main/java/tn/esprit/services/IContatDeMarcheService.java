@@ -13,4 +13,7 @@ public interface IContatDeMarcheService {
     ContatDeMarche updateContatDeMarche(ContatDeMarche c);
     ContatDeMarche retrieveContatDeMarche(long id);
     List<ContatDeMarche> searchContatDeMarche(String keyword);
+    List<ContatDeMarche> findBudget(long id );
+    List<ContatDeMarche> findFournisseur(long id );
+
 }

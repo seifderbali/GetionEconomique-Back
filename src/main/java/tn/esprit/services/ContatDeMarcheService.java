@@ -98,4 +98,36 @@ public class ContatDeMarcheService implements IContatDeMarcheService {
         }
 
         return listContatDeMarches;        }
+
+    @Override
+    public List<ContatDeMarche> findBudget(long id) {
+        List<ContatDeMarche> listContatDeMarches = new ArrayList<ContatDeMarche>();
+        try {
+            listContatDeMarches = (List<ContatDeMarche>) contatDeMarcheRepository.findByBudget(id);
+            for(ContatDeMarche c : listContatDeMarches)
+            {
+                log.info("ContatDeMarche = "+c);
+            }}
+        catch(Exception e)
+        {
+            log.info("error = "+e);
+        }
+
+        return listContatDeMarches;        }
+
+    @Override
+    public List<ContatDeMarche> findFournisseur(long id) {
+        List<ContatDeMarche> listContatDeMarches = new ArrayList<ContatDeMarche>();
+        try {
+            listContatDeMarches = (List<ContatDeMarche>) contatDeMarcheRepository.findByFoiurnisseur(id);
+            for(ContatDeMarche c : listContatDeMarches)
+            {
+                log.info("ContatDeMarche = "+c);
+            }}
+        catch(Exception e)
+        {
+            log.info("error = "+e);
+        }
+
+        return listContatDeMarches;        }
 }

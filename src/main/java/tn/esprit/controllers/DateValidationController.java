@@ -19,7 +19,7 @@ public class DateValidationController {
 
 
 
-    @PostMapping("/addContatDeMarche")
+    @PostMapping("/addDateValidation")
     void add(@RequestBody DateValidation d)
     {
 
@@ -36,7 +36,7 @@ public class DateValidationController {
     {
         Ds.deleteDateValidation(id);
     }
-    @GetMapping("/displayContatDeMarche")
+    @GetMapping("/displayDateValidation")
     List<DateValidation> display()
     {
         return Ds.retreiveAllDateValidation();

@@ -13,6 +13,8 @@ public interface IBudgetInvestissementService {
     BudgetInvestissement updateBudgetInvestissement(BudgetInvestissement b);
     BudgetInvestissement retrieveBudgetInvestissement(long id);
     List<BudgetInvestissement> searchBudgetInvestissement(String keyword);
+    BudgetInvestissement findByContrat(long id);
+
 }
 
 

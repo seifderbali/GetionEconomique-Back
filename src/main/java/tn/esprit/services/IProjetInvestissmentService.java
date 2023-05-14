@@ -1,6 +1,7 @@
 package tn.esprit.services;
 
 
+import tn.esprit.entities.BudgetInvestissement;
 import tn.esprit.entities.ProjetInvestissment;
 
 import java.util.List;
@@ -12,5 +13,11 @@ public interface IProjetInvestissmentService {
     ProjetInvestissment updateProjetInvestissment(ProjetInvestissment p );
     ProjetInvestissment retrieveProjetInvestissment(long id);
     List<ProjetInvestissment> searchProjetInvestissment(String keyword);
+
+    BudgetInvestissement findBudget(long id);
+
+    List<BudgetInvestissement> findByEntite(long id);
+    ProjetInvestissment findProject(long id);
+
 }
 

@@ -3,6 +3,7 @@ package tn.esprit.services;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import tn.esprit.entities.BudgetInvestissement;
 import tn.esprit.entities.ProjetInvestissment;
 import tn.esprit.repositories.ProjetInvestissmentRepository;
 
@@ -96,4 +97,29 @@ public class ProjetInvestissmentService implements IProjetInvestissmentService{
         }
 
         return listProjetInvestissments;        }
+
+    @Override
+    public BudgetInvestissement findBudget(long id) {
+        return projetInvestissmentRepository.findBudget(id);
+    }
+
+    @Override
+    public List<BudgetInvestissement> findByEntite(long id) {
+        List<ProjetInvestissment> listProjetInvestissments = new ArrayList<ProjetInvestissment>();
+        List<BudgetInvestissement> listBudgetInvestissements = new ArrayList<BudgetInvestissement>();
+
+        listProjetInvestissments = (List<ProjetInvestissment>) projetInvestissmentRepository.findAll();
+        for(ProjetInvestissment p : listProjetInvestissments)
+        {
+            if (p.getEntiteSI().getId() == id){
+                listBudgetInvestissements.add(p.getBudgetInvestissement());
+            }
+
+        }
+        return listBudgetInvestissements;
+    }
+
+    @Override
+    public ProjetInvestissment findProject(long id) {
+        return projetInvestissmentRepository.findProjectInvesst(id);    }
 }

@@ -50,4 +50,9 @@ public class BudgetInvestissementController {
     {
         return Bs.searchBudgetInvestissement(keyword);
     }
+    @GetMapping("/findByContrat/{id}")
+    BudgetInvestissement findByContrat(@PathVariable("id") int id)
+    {
+        return Bs.findByContrat(id);
+    }
 }

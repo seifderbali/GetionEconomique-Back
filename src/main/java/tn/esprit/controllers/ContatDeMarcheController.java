@@ -59,4 +59,15 @@ public class ContatDeMarcheController {
     {
         return Cs.searchContatDeMarche(keyword);
     }
+    @GetMapping("/findByBudget/{id}")
+    List<ContatDeMarche> findByBudget(@PathVariable("id") long id)
+    {
+        return Cs.findBudget(id);
+    }
+    @GetMapping("/findByFournisseur/{id}")
+    List<ContatDeMarche> findByFournisseur(@PathVariable("id") long id)
+    {
+        return Cs.findFournisseur(id);
+    }
+
 }

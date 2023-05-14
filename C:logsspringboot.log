@@ -1,38 +1,73 @@
-2023-03-09 12:48:28.397  INFO 781 --- [restartedMain] tn.esprit.PfeApplication                 : Starting PfeApplication using Java 15.0.2 on Derbalis-MacBook-Pro.local with PID 781 (/Users/seif/Desktop/PFE/target/classes started by seif in /Users/seif/Desktop/PFE)
-2023-03-09 12:48:28.408  INFO 781 --- [restartedMain] tn.esprit.PfeApplication                 : No active profile set, falling back to default profiles: default
-2023-03-09 12:48:28.722  INFO 781 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-09 12:48:28.722  INFO 781 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-09 12:48:30.577  INFO 781 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-09 12:48:30.717  INFO 781 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 8 JPA repository interfaces.
-2023-03-09 12:48:31.555  INFO 781 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2023-03-09 12:48:31.566  INFO 781 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-09 12:48:31.567  INFO 781 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
-2023-03-09 12:48:31.649  INFO 781 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2023-03-09 12:48:31.650  INFO 781 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2927 ms
-2023-03-09 12:48:31.887  INFO 781 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-09 12:48:31.952  INFO 781 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
-2023-03-09 12:48:32.191  INFO 781 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-03-09 12:48:32.340  INFO 781 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-09 12:48:32.527  INFO 781 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-09 12:48:32.545  INFO 781 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2023-03-09 12:48:33.410  INFO 781 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-09 12:48:33.419  INFO 781 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-09 12:48:34.252  WARN 781 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-09 12:48:34.506  INFO 781 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-09 12:48:34.749  INFO 781 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api'
-2023-03-09 12:48:35.421  INFO 781 --- [restartedMain] tn.esprit.PfeApplication                 : Started PfeApplication in 7.829 seconds (JVM running for 9.275)
-2023-03-09 12:55:02.308  INFO 781 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-09 12:55:02.310  INFO 781 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-09 12:55:02.326  INFO 781 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
-2023-03-09 12:55:02.470 DEBUG 781 --- [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+2023-05-14 20:40:41.152  INFO 76095 --- [restartedMain] tn.esprit.PfeApplication                 : Starting PfeApplication using Java 15.0.2 on Derbalis-MacBook-Pro.local with PID 76095 (/Users/seif/Desktop/PFE/target/classes started by seif in /Users/seif/Desktop/PFE)
+2023-05-14 20:40:41.158  INFO 76095 --- [restartedMain] tn.esprit.PfeApplication                 : No active profile set, falling back to default profiles: default
+2023-05-14 20:40:41.246  INFO 76095 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-14 20:40:41.247  INFO 76095 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-14 20:40:42.281  INFO 76095 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-14 20:40:42.355  INFO 76095 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 8 JPA repository interfaces.
+2023-05-14 20:40:43.119  INFO 76095 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-05-14 20:40:43.131  INFO 76095 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-14 20:40:43.131  INFO 76095 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-05-14 20:40:43.272  INFO 76095 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2023-05-14 20:40:43.273  INFO 76095 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2026 ms
+2023-05-14 20:40:43.478  INFO 76095 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 20:40:43.544  INFO 76095 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2023-05-14 20:40:43.738  INFO 76095 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-14 20:40:43.860  INFO 76095 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-14 20:40:44.058  INFO 76095 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-14 20:40:44.075  INFO 76095 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-05-14 20:40:44.894  INFO 76095 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 20:40:44.904  INFO 76095 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-14 20:40:45.809  WARN 76095 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-14 20:40:46.083  INFO 76095 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-14 20:40:46.333  INFO 76095 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api'
+2023-05-14 20:40:48.350  INFO 76095 --- [restartedMain] tn.esprit.PfeApplication                 : Started PfeApplication in 7.859 seconds (JVM running for 8.909)
+2023-05-14 20:42:04.403  INFO 76095 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-14 20:42:04.404  INFO 76095 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-14 20:42:04.414  INFO 76095 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2023-05-14 20:42:04.533 DEBUG 76095 --- [http-nio-8081-exec-1] org.hibernate.SQL                        : 
     select
         entitesi0_.id as id1_4_,
         entitesi0_.name as name2_4_ 
     from
         entitesi entitesi0_
-2023-03-09 12:55:02.503  INFO 781 --- [http-nio-8081-exec-1] tn.esprit.services.EntiteSIService       : user = EntiteSI(id=1, name=derbali)
-2023-03-09 12:55:02.503  INFO 781 --- [http-nio-8081-exec-1] tn.esprit.services.EntiteSIService       : user = EntiteSI(id=5, name=neww)
-2023-03-09 12:55:04.666 DEBUG 781 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+2023-05-14 20:42:04.563  INFO 76095 --- [http-nio-8081-exec-1] tn.esprit.services.EntiteSIService       : user = EntiteSI(id=1, name=derbali)
+2023-05-14 20:42:04.563  INFO 76095 --- [http-nio-8081-exec-1] tn.esprit.services.EntiteSIService       : user = EntiteSI(id=5, name=neww)
+2023-05-14 20:42:06.371 DEBUG 76095 --- [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+    select
+        entitesi0_.id as id1_4_,
+        entitesi0_.name as name2_4_ 
+    from
+        entitesi entitesi0_
+2023-05-14 20:42:06.378 DEBUG 76095 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_7_,
+        user0_.mail as mail2_7_,
+        user0_.address as address3_7_,
+        user0_.birthdate as birthdat4_7_,
+        user0_.direction as directio5_7_,
+        user0_.entitesi_id as entites13_7_,
+        user0_.lastname as lastname6_7_,
+        user0_.name as name7_7_,
+        user0_.password as password8_7_,
+        user0_.place_of_birth as place_of9_7_,
+        user0_.role as role10_7_,
+        user0_.sexe as sexe11_7_,
+        user0_.tel as tel12_7_ 
+    from
+        user user0_
+2023-05-14 20:42:06.381  INFO 76095 --- [http-nio-8081-exec-3] tn.esprit.services.EntiteSIService       : user = EntiteSI(id=1, name=derbali)
+2023-05-14 20:42:06.384  INFO 76095 --- [http-nio-8081-exec-3] tn.esprit.services.EntiteSIService       : user = EntiteSI(id=5, name=neww)
+2023-05-14 20:42:06.399 DEBUG 76095 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        entitesi0_.id as id1_4_0_,
+        entitesi0_.name as name2_4_0_ 
+    from
+        entitesi entitesi0_ 
+    where
+        entitesi0_.id=?
+2023-05-14 20:42:06.401 TRACE 76095 --- [http-nio-8081-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-05-14 20:42:06.413  INFO 76095 --- [http-nio-8081-exec-2] tn.esprit.services.UserService           : user = User(id=5, name=seif, lastname=derbali, birthdate=0024-03-18, Mail=seif@derbali.com, password=1234, placeOfBirth=tunisia, address=tunis, tel=54000000, sexe=Male, direction=administration, role=Manager, token=null, entiteSI=EntiteSI(id=1, name=derbali))
+2023-05-14 20:42:08.628 DEBUG 76095 --- [http-nio-8081-exec-4] org.hibernate.SQL                        : 
     select
         fournisseu0_.id as id1_5_,
         fournisseu0_.code as code2_5_,
@@ -44,9 +79,57 @@
         fournisseu0_.tel as tel8_5_ 
     from
         fournisseur fournisseu0_
-2023-03-09 12:55:04.677  INFO 781 --- [http-nio-8081-exec-2] tn.esprit.services.FournisseurService    : Fournisseur = Fournisseur(id=1, code=1, name=aa, immatFiscal=aa, contact=cc, mail=aa@aa.a, siteWeb=a, tel=1111)
-2023-03-09 12:55:04.677  INFO 781 --- [http-nio-8081-exec-2] tn.esprit.services.FournisseurService    : Fournisseur = Fournisseur(id=2, code=1111, name=111, immatFiscal=sss, contact=seif, mail=s@s.s, siteWeb=ss, tel=1212)
-2023-03-09 12:55:13.863 DEBUG 781 --- [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+2023-05-14 20:42:08.633  INFO 76095 --- [http-nio-8081-exec-4] tn.esprit.services.FournisseurService    : Fournisseur = Fournisseur(id=1, code=1, name=aa, immatFiscal=aa, contact=cc, mail=aa@aa.a, siteWeb=a, tel=1111)
+2023-05-14 20:42:08.634  INFO 76095 --- [http-nio-8081-exec-4] tn.esprit.services.FournisseurService    : Fournisseur = Fournisseur(id=2, code=1111, name=111, immatFiscal=sss, contact=seif, mail=s@s.s, siteWeb=ss, tel=1212)
+2023-05-14 20:42:10.661 DEBUG 76095 --- [http-nio-8081-exec-5] org.hibernate.SQL                        : 
+    select
+        projetinve0_.id as id1_6_,
+        projetinve0_.code_projet as code_pro2_6_,
+        projetinve0_.budget_investissement_id as budget_11_6_,
+        projetinve0_.categorie as categori3_6_,
+        projetinve0_.classification as classifi4_6_,
+        projetinve0_.description_somaire as descript5_6_,
+        projetinve0_.entitesi_id as entites12_6_,
+        projetinve0_.intitule_projet as intitule6_6_,
+        projetinve0_.nature_besoin as nature_b7_6_,
+        projetinve0_.prix_unitairettc as prix_uni8_6_,
+        projetinve0_.quantite as quantite9_6_,
+        projetinve0_.type as type10_6_ 
+    from
+        projet_investissment projetinve0_
+2023-05-14 20:42:10.664 DEBUG 76095 --- [http-nio-8081-exec-5] org.hibernate.SQL                        : 
+    select
+        budgetinve0_.id as id1_0_0_,
+        budgetinve0_.budgetn as budgetn2_0_0_,
+        budgetinve0_.budgetn1 as budgetn3_0_0_,
+        budgetinve0_.budgetn2 as budgetn4_0_0_,
+        budgetinve0_.budgetn3 as budgetn5_0_0_,
+        budgetinve0_.anneebudgetaire as anneebud6_0_0_,
+        budgetinve0_.cout_etude_serv as cout_etu7_0_0_,
+        budgetinve0_.cout_logiciel as cout_log8_0_0_,
+        budgetinve0_.cout_materiel as cout_mat9_0_0_ 
+    from
+        budget_investissement budgetinve0_ 
+    where
+        budgetinve0_.id=?
+2023-05-14 20:42:10.665 TRACE 76095 --- [http-nio-8081-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [19]
+2023-05-14 20:42:10.667 DEBUG 76095 --- [http-nio-8081-exec-5] org.hibernate.SQL                        : 
+    select
+        entitesi0_.id as id1_4_0_,
+        entitesi0_.name as name2_4_0_ 
+    from
+        entitesi entitesi0_ 
+    where
+        entitesi0_.id=?
+2023-05-14 20:42:10.667 TRACE 76095 --- [http-nio-8081-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-05-14 20:42:10.669  INFO 76095 --- [http-nio-8081-exec-5] t.e.services.ProjetInvestissmentService  : ProjetInvestissment = ProjetInvestissment(id=8, CodeProjet=1212, intituleProjet=projet1q, descriptionSomaire=somm1, categorie=cat1a, classification=class1qq, natureBesoin=1natb, type=type1, quantite=121, prixUnitaireTTC=12221, entiteSI=EntiteSI(id=1, name=derbali), budgetInvestissement=BudgetInvestissement(id=19, anneebudgetaire=2023-05-11, coutLogiciel=12, coutMateriel=21, coutEtudeServ=1112, BudgetN=21, BudgetN1=12, BudgetN2=21, BudgetN3=21))
+2023-05-14 20:42:12.532 DEBUG 76095 --- [http-nio-8081-exec-6] org.hibernate.SQL                        : 
+    select
+        entitesi0_.id as id1_4_,
+        entitesi0_.name as name2_4_ 
+    from
+        entitesi entitesi0_
+2023-05-14 20:42:12.533 DEBUG 76095 --- [http-nio-8081-exec-7] org.hibernate.SQL                        : 
     select
         budgetinve0_.id as id1_0_,
         budgetinve0_.budgetn as budgetn2_0_,
@@ -59,9 +142,567 @@
         budgetinve0_.cout_materiel as cout_mat9_0_ 
     from
         budget_investissement budgetinve0_
-2023-03-09 12:55:13.894  INFO 781 --- [http-nio-8081-exec-3] t.e.s.BudgetInvestissementService        : user = BudgetInvestissement(id=1, anneebudgetaire=2021, coutLogiciel=500, coutMateriel=250, coutEtudeServ=1200, BudgetN=1000, BudgetN1=0, BudgetN2=0, BudgetN3=0)
-2023-03-09 12:55:13.899  INFO 781 --- [http-nio-8081-exec-3] t.e.s.BudgetInvestissementService        : user = BudgetInvestissement(id=2, anneebudgetaire=2023, coutLogiciel=1000, coutMateriel=20000, coutEtudeServ=500, BudgetN=30000, BudgetN1=100, BudgetN2=299, BudgetN3=3000)
-2023-03-09 13:01:18.405 DEBUG 781 --- [http-nio-8081-exec-5] org.hibernate.SQL                        : 
+2023-05-14 20:42:12.539  INFO 76095 --- [http-nio-8081-exec-6] tn.esprit.services.EntiteSIService       : user = EntiteSI(id=1, name=derbali)
+2023-05-14 20:42:12.539  INFO 76095 --- [http-nio-8081-exec-6] tn.esprit.services.EntiteSIService       : user = EntiteSI(id=5, name=neww)
+2023-05-14 20:42:12.540  INFO 76095 --- [http-nio-8081-exec-7] t.e.s.BudgetInvestissementService        : user = BudgetInvestissement(id=1, anneebudgetaire=21-02-2023, coutLogiciel=1222, coutMateriel=10000, coutEtudeServ=30, BudgetN=1234, BudgetN1=23000, BudgetN2=30003, BudgetN3=54000)
+2023-05-14 20:42:12.541  INFO 76095 --- [http-nio-8081-exec-7] t.e.s.BudgetInvestissementService        : user = BudgetInvestissement(id=2, anneebudgetaire=2023, coutLogiciel=1000, coutMateriel=20000, coutEtudeServ=500, BudgetN=30000, BudgetN1=100, BudgetN2=299, BudgetN3=3000)
+2023-05-14 20:42:12.541  INFO 76095 --- [http-nio-8081-exec-7] t.e.s.BudgetInvestissementService        : user = BudgetInvestissement(id=18, anneebudgetaire=2023-04-12, coutLogiciel=3, coutMateriel=4, coutEtudeServ=5, BudgetN=6, BudgetN1=7, BudgetN2=8, BudgetN3=9)
+2023-05-14 20:42:12.541  INFO 76095 --- [http-nio-8081-exec-7] t.e.s.BudgetInvestissementService        : user = BudgetInvestissement(id=19, anneebudgetaire=2023-05-11, coutLogiciel=12, coutMateriel=21, coutEtudeServ=1112, BudgetN=21, BudgetN1=12, BudgetN2=21, BudgetN3=21)
+2023-05-14 20:42:18.162 DEBUG 76095 --- [http-nio-8081-exec-8] org.hibernate.SQL                        : 
+    select
+        contatdema0_.id as id1_2_,
+        contatdema0_.budget_investissement_id as budget_13_2_,
+        contatdema0_.date_acquisition as date_acq2_2_,
+        contatdema0_.date_reception_definitive as date_rec3_2_,
+        contatdema0_.date_reception_provisoire as date_rec4_2_,
+        contatdema0_.delai_garantie as delai_ga5_2_,
+        contatdema0_.devise as devise6_2_,
+        contatdema0_.fournisseur_id as fournis14_2_,
+        contatdema0_.intitule_projet as intitule7_2_,
+        contatdema0_.montantht as montanth8_2_,
+        contatdema0_.montantttc as montantt9_2_,
+        contatdema0_.objet_contrat as objet_c10_2_,
+        contatdema0_.observation as observa11_2_,
+        contatdema0_.reference as referen12_2_ 
+    from
+        contat_de_marche contatdema0_
+2023-05-14 20:42:18.166 DEBUG 76095 --- [http-nio-8081-exec-8] org.hibernate.SQL                        : 
+    select
+        budgetinve0_.id as id1_0_0_,
+        budgetinve0_.budgetn as budgetn2_0_0_,
+        budgetinve0_.budgetn1 as budgetn3_0_0_,
+        budgetinve0_.budgetn2 as budgetn4_0_0_,
+        budgetinve0_.budgetn3 as budgetn5_0_0_,
+        budgetinve0_.anneebudgetaire as anneebud6_0_0_,
+        budgetinve0_.cout_etude_serv as cout_etu7_0_0_,
+        budgetinve0_.cout_logiciel as cout_log8_0_0_,
+        budgetinve0_.cout_materiel as cout_mat9_0_0_ 
+    from
+        budget_investissement budgetinve0_ 
+    where
+        budgetinve0_.id=?
+2023-05-14 20:42:18.167 TRACE 76095 --- [http-nio-8081-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [18]
+2023-05-14 20:42:18.169 DEBUG 76095 --- [http-nio-8081-exec-8] org.hibernate.SQL                        : 
+    select
+        fournisseu0_.id as id1_5_0_,
+        fournisseu0_.code as code2_5_0_,
+        fournisseu0_.contact as contact3_5_0_,
+        fournisseu0_.immat_fiscal as immat_fi4_5_0_,
+        fournisseu0_.mail as mail5_5_0_,
+        fournisseu0_.name as name6_5_0_,
+        fournisseu0_.site_web as site_web7_5_0_,
+        fournisseu0_.tel as tel8_5_0_ 
+    from
+        fournisseur fournisseu0_ 
+    where
+        fournisseu0_.id=?
+2023-05-14 20:42:18.170 TRACE 76095 --- [http-nio-8081-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [2]
+2023-05-14 20:42:18.173 DEBUG 76095 --- [http-nio-8081-exec-8] org.hibernate.SQL                        : 
+    select
+        fournisseu0_.id as id1_5_0_,
+        fournisseu0_.code as code2_5_0_,
+        fournisseu0_.contact as contact3_5_0_,
+        fournisseu0_.immat_fiscal as immat_fi4_5_0_,
+        fournisseu0_.mail as mail5_5_0_,
+        fournisseu0_.name as name6_5_0_,
+        fournisseu0_.site_web as site_web7_5_0_,
+        fournisseu0_.tel as tel8_5_0_ 
+    from
+        fournisseur fournisseu0_ 
+    where
+        fournisseu0_.id=?
+2023-05-14 20:42:18.173 TRACE 76095 --- [http-nio-8081-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-05-14 20:42:18.176  INFO 76095 --- [http-nio-8081-exec-8] t.esprit.services.ContatDeMarcheService  : ContatDeMarche = ContatDeMarche(id=3, reference=ref, objetContrat=objetContrat, intituleProjet=intituleProjet, montantHT=montantHT, montantTTC=montantTTC, devise=devise, delaiGarantie=2023-05-12, observation=observation, dateAcquisition=2023-05-27, dateReceptionProvisoire=2023-05-13, dateReceptionDefinitive=2023-06-01, budgetInvestissement=BudgetInvestissement(id=18, anneebudgetaire=2023-04-12, coutLogiciel=3, coutMateriel=4, coutEtudeServ=5, BudgetN=6, BudgetN1=7, BudgetN2=8, BudgetN3=9), fournisseur=Fournisseur(id=2, code=1111, name=111, immatFiscal=sss, contact=seif, mail=s@s.s, siteWeb=ss, tel=1212))
+2023-05-14 20:42:18.176  INFO 76095 --- [http-nio-8081-exec-8] t.esprit.services.ContatDeMarcheService  : ContatDeMarche = ContatDeMarche(id=4, reference=2102, objetContrat=statutProjet, intituleProjet=axeDemande, montantHT=12223, montantTTC=13444, devise=1000, delaiGarantie=21-02-2023, observation=observation, dateAcquisition=0026-08-16, dateReceptionProvisoire=0026-08-16, dateReceptionDefinitive=0026-08-16, budgetInvestissement=BudgetInvestissement(id=18, anneebudgetaire=2023-04-12, coutLogiciel=3, coutMateriel=4, coutEtudeServ=5, BudgetN=6, BudgetN1=7, BudgetN2=8, BudgetN3=9), fournisseur=Fournisseur(id=1, code=1, name=aa, immatFiscal=aa, contact=cc, mail=aa@aa.a, siteWeb=a, tel=1111))
+2023-05-14 20:43:19.884 DEBUG 76095 --- [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+    select
+        projetinve0_.id as id1_6_,
+        projetinve0_.code_projet as code_pro2_6_,
+        projetinve0_.budget_investissement_id as budget_11_6_,
+        projetinve0_.categorie as categori3_6_,
+        projetinve0_.classification as classifi4_6_,
+        projetinve0_.description_somaire as descript5_6_,
+        projetinve0_.entitesi_id as entites12_6_,
+        projetinve0_.intitule_projet as intitule6_6_,
+        projetinve0_.nature_besoin as nature_b7_6_,
+        projetinve0_.prix_unitairettc as prix_uni8_6_,
+        projetinve0_.quantite as quantite9_6_,
+        projetinve0_.type as type10_6_ 
+    from
+        projet_investissment projetinve0_
+2023-05-14 20:43:19.888 DEBUG 76095 --- [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+    select
+        budgetinve0_.id as id1_0_0_,
+        budgetinve0_.budgetn as budgetn2_0_0_,
+        budgetinve0_.budgetn1 as budgetn3_0_0_,
+        budgetinve0_.budgetn2 as budgetn4_0_0_,
+        budgetinve0_.budgetn3 as budgetn5_0_0_,
+        budgetinve0_.anneebudgetaire as anneebud6_0_0_,
+        budgetinve0_.cout_etude_serv as cout_etu7_0_0_,
+        budgetinve0_.cout_logiciel as cout_log8_0_0_,
+        budgetinve0_.cout_materiel as cout_mat9_0_0_ 
+    from
+        budget_investissement budgetinve0_ 
+    where
+        budgetinve0_.id=?
+2023-05-14 20:43:19.889 TRACE 76095 --- [http-nio-8081-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [19]
+2023-05-14 20:43:19.891 DEBUG 76095 --- [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+    select
+        entitesi0_.id as id1_4_0_,
+        entitesi0_.name as name2_4_0_ 
+    from
+        entitesi entitesi0_ 
+    where
+        entitesi0_.id=?
+2023-05-14 20:43:19.892 TRACE 76095 --- [http-nio-8081-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-05-14 20:43:19.895  INFO 76095 --- [http-nio-8081-exec-1] t.e.services.ProjetInvestissmentService  : ProjetInvestissment = ProjetInvestissment(id=8, CodeProjet=1212, intituleProjet=projet1q, descriptionSomaire=somm1, categorie=cat1a, classification=class1qq, natureBesoin=1natb, type=type1, quantite=121, prixUnitaireTTC=12221, entiteSI=EntiteSI(id=1, name=derbali), budgetInvestissement=BudgetInvestissement(id=19, anneebudgetaire=2023-05-11, coutLogiciel=12, coutMateriel=21, coutEtudeServ=1112, BudgetN=21, BudgetN1=12, BudgetN2=21, BudgetN3=21))
+2023-05-14 20:52:27.076 DEBUG 76095 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        projetinve0_.id as id1_6_,
+        projetinve0_.code_projet as code_pro2_6_,
+        projetinve0_.budget_investissement_id as budget_11_6_,
+        projetinve0_.categorie as categori3_6_,
+        projetinve0_.classification as classifi4_6_,
+        projetinve0_.description_somaire as descript5_6_,
+        projetinve0_.entitesi_id as entites12_6_,
+        projetinve0_.intitule_projet as intitule6_6_,
+        projetinve0_.nature_besoin as nature_b7_6_,
+        projetinve0_.prix_unitairettc as prix_uni8_6_,
+        projetinve0_.quantite as quantite9_6_,
+        projetinve0_.type as type10_6_ 
+    from
+        projet_investissment projetinve0_
+2023-05-14 20:52:27.077 DEBUG 76095 --- [http-nio-8081-exec-4] org.hibernate.SQL                        : 
+    select
+        comitetech0_.id as id1_1_,
+        comitetech0_.annee as annee2_1_,
+        comitetech0_.axe_demande as axe_dema3_1_,
+        comitetech0_.date_validation_id as date_val7_1_,
+        comitetech0_.observation_comite as observat4_1_,
+        comitetech0_.projet_investissment_id as projet_i8_1_,
+        comitetech0_.statut_projet as statut_p5_1_,
+        comitetech0_.type_demande as type_dem6_1_ 
+    from
+        comite_technique comitetech0_
+2023-05-14 20:52:27.085 DEBUG 76095 --- [http-nio-8081-exec-4] org.hibernate.SQL                        : 
+    select
+        datevalida0_.id as id1_3_0_,
+        datevalida0_.decision_comitecc as decision2_3_0_,
+        datevalida0_.decision_comite_tech as decision3_3_0_,
+        datevalida0_.decision_comite_tech_fin as decision4_3_0_,
+        datevalida0_.validationcc as validati5_3_0_,
+        datevalida0_.validation_tech as validati6_3_0_,
+        datevalida0_.validation_tech_financiaire as validati7_3_0_ 
+    from
+        date_validation datevalida0_ 
+    where
+        datevalida0_.id=?
+2023-05-14 20:52:27.085 TRACE 76095 --- [http-nio-8081-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [3]
+2023-05-14 20:52:27.086 DEBUG 76095 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        budgetinve0_.id as id1_0_0_,
+        budgetinve0_.budgetn as budgetn2_0_0_,
+        budgetinve0_.budgetn1 as budgetn3_0_0_,
+        budgetinve0_.budgetn2 as budgetn4_0_0_,
+        budgetinve0_.budgetn3 as budgetn5_0_0_,
+        budgetinve0_.anneebudgetaire as anneebud6_0_0_,
+        budgetinve0_.cout_etude_serv as cout_etu7_0_0_,
+        budgetinve0_.cout_logiciel as cout_log8_0_0_,
+        budgetinve0_.cout_materiel as cout_mat9_0_0_ 
+    from
+        budget_investissement budgetinve0_ 
+    where
+        budgetinve0_.id=?
+2023-05-14 20:52:27.087 TRACE 76095 --- [http-nio-8081-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [19]
+2023-05-14 20:52:27.091 DEBUG 76095 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        entitesi0_.id as id1_4_0_,
+        entitesi0_.name as name2_4_0_ 
+    from
+        entitesi entitesi0_ 
+    where
+        entitesi0_.id=?
+2023-05-14 20:52:27.091 TRACE 76095 --- [http-nio-8081-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-05-14 20:52:27.092 DEBUG 76095 --- [http-nio-8081-exec-4] org.hibernate.SQL                        : 
+    select
+        projetinve0_.id as id1_6_0_,
+        projetinve0_.code_projet as code_pro2_6_0_,
+        projetinve0_.budget_investissement_id as budget_11_6_0_,
+        projetinve0_.categorie as categori3_6_0_,
+        projetinve0_.classification as classifi4_6_0_,
+        projetinve0_.description_somaire as descript5_6_0_,
+        projetinve0_.entitesi_id as entites12_6_0_,
+        projetinve0_.intitule_projet as intitule6_6_0_,
+        projetinve0_.nature_besoin as nature_b7_6_0_,
+        projetinve0_.prix_unitairettc as prix_uni8_6_0_,
+        projetinve0_.quantite as quantite9_6_0_,
+        projetinve0_.type as type10_6_0_,
+        budgetinve1_.id as id1_0_1_,
+        budgetinve1_.budgetn as budgetn2_0_1_,
+        budgetinve1_.budgetn1 as budgetn3_0_1_,
+        budgetinve1_.budgetn2 as budgetn4_0_1_,
+        budgetinve1_.budgetn3 as budgetn5_0_1_,
+        budgetinve1_.anneebudgetaire as anneebud6_0_1_,
+        budgetinve1_.cout_etude_serv as cout_etu7_0_1_,
+        budgetinve1_.cout_logiciel as cout_log8_0_1_,
+        budgetinve1_.cout_materiel as cout_mat9_0_1_,
+        entitesi2_.id as id1_4_2_,
+        entitesi2_.name as name2_4_2_ 
+    from
+        projet_investissment projetinve0_ 
+    left outer join
+        budget_investissement budgetinve1_ 
+            on projetinve0_.budget_investissement_id=budgetinve1_.id 
+    left outer join
+        entitesi entitesi2_ 
+            on projetinve0_.entitesi_id=entitesi2_.id 
+    where
+        projetinve0_.id=?
+2023-05-14 20:52:27.093 TRACE 76095 --- [http-nio-8081-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [8]
+2023-05-14 20:52:27.100  INFO 76095 --- [http-nio-8081-exec-2] t.e.services.ProjetInvestissmentService  : ProjetInvestissment = ProjetInvestissment(id=8, CodeProjet=1212, intituleProjet=projet1q, descriptionSomaire=somm1, categorie=cat1a, classification=class1qq, natureBesoin=1natb, type=type1, quantite=121, prixUnitaireTTC=12221, entiteSI=EntiteSI(id=1, name=derbali), budgetInvestissement=BudgetInvestissement(id=19, anneebudgetaire=2023-05-11, coutLogiciel=12, coutMateriel=21, coutEtudeServ=1112, BudgetN=21, BudgetN1=12, BudgetN2=21, BudgetN3=21))
+2023-05-14 20:52:27.106  INFO 76095 --- [http-nio-8081-exec-4] t.e.services.ComiteTechniqueService      : ComiteTechnique = ComiteTechnique(id=2, annee=2023-05-17, statutProjet=statutProjet3, axeDemande=3axeDemande, typeDemande=typeDemande3, observationComite=observationComite3, dateValidation=DateValidation(id=3, validationCC=2023-05-12, decisionComiteCC=decisionComiteCC, validationTech=2023-05-20, decisionComiteTech=decisionComiteTech, validationTechFinanciaire=2023-06-01, decisionComiteTechFin=decisionComiteTechFin), projetInvestissment=ProjetInvestissment(id=8, CodeProjet=1212, intituleProjet=projet1q, descriptionSomaire=somm1, categorie=cat1a, classification=class1qq, natureBesoin=1natb, type=type1, quantite=121, prixUnitaireTTC=12221, entiteSI=EntiteSI(id=1, name=derbali), budgetInvestissement=BudgetInvestissement(id=19, anneebudgetaire=2023-05-11, coutLogiciel=12, coutMateriel=21, coutEtudeServ=1112, BudgetN=21, BudgetN1=12, BudgetN2=21, BudgetN3=21)))
+2023-05-14 20:53:39.965 DEBUG 76095 --- [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+    select
+        comitetech0_.id as id1_1_,
+        comitetech0_.annee as annee2_1_,
+        comitetech0_.axe_demande as axe_dema3_1_,
+        comitetech0_.date_validation_id as date_val7_1_,
+        comitetech0_.observation_comite as observat4_1_,
+        comitetech0_.projet_investissment_id as projet_i8_1_,
+        comitetech0_.statut_projet as statut_p5_1_,
+        comitetech0_.type_demande as type_dem6_1_ 
+    from
+        comite_technique comitetech0_
+2023-05-14 20:53:39.968 DEBUG 76095 --- [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+    select
+        datevalida0_.id as id1_3_0_,
+        datevalida0_.decision_comitecc as decision2_3_0_,
+        datevalida0_.decision_comite_tech as decision3_3_0_,
+        datevalida0_.decision_comite_tech_fin as decision4_3_0_,
+        datevalida0_.validationcc as validati5_3_0_,
+        datevalida0_.validation_tech as validati6_3_0_,
+        datevalida0_.validation_tech_financiaire as validati7_3_0_ 
+    from
+        date_validation datevalida0_ 
+    where
+        datevalida0_.id=?
+2023-05-14 20:53:39.968 TRACE 76095 --- [http-nio-8081-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [3]
+2023-05-14 20:53:39.970 DEBUG 76095 --- [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+    select
+        projetinve0_.id as id1_6_0_,
+        projetinve0_.code_projet as code_pro2_6_0_,
+        projetinve0_.budget_investissement_id as budget_11_6_0_,
+        projetinve0_.categorie as categori3_6_0_,
+        projetinve0_.classification as classifi4_6_0_,
+        projetinve0_.description_somaire as descript5_6_0_,
+        projetinve0_.entitesi_id as entites12_6_0_,
+        projetinve0_.intitule_projet as intitule6_6_0_,
+        projetinve0_.nature_besoin as nature_b7_6_0_,
+        projetinve0_.prix_unitairettc as prix_uni8_6_0_,
+        projetinve0_.quantite as quantite9_6_0_,
+        projetinve0_.type as type10_6_0_,
+        budgetinve1_.id as id1_0_1_,
+        budgetinve1_.budgetn as budgetn2_0_1_,
+        budgetinve1_.budgetn1 as budgetn3_0_1_,
+        budgetinve1_.budgetn2 as budgetn4_0_1_,
+        budgetinve1_.budgetn3 as budgetn5_0_1_,
+        budgetinve1_.anneebudgetaire as anneebud6_0_1_,
+        budgetinve1_.cout_etude_serv as cout_etu7_0_1_,
+        budgetinve1_.cout_logiciel as cout_log8_0_1_,
+        budgetinve1_.cout_materiel as cout_mat9_0_1_,
+        entitesi2_.id as id1_4_2_,
+        entitesi2_.name as name2_4_2_ 
+    from
+        projet_investissment projetinve0_ 
+    left outer join
+        budget_investissement budgetinve1_ 
+            on projetinve0_.budget_investissement_id=budgetinve1_.id 
+    left outer join
+        entitesi entitesi2_ 
+            on projetinve0_.entitesi_id=entitesi2_.id 
+    where
+        projetinve0_.id=?
+2023-05-14 20:53:39.971 TRACE 76095 --- [http-nio-8081-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [8]
+2023-05-14 20:53:39.974  INFO 76095 --- [http-nio-8081-exec-7] t.e.services.ComiteTechniqueService      : ComiteTechnique = ComiteTechnique(id=2, annee=2023-05-17, statutProjet=statutProjet3, axeDemande=3axeDemande, typeDemande=typeDemande3, observationComite=observationComite3, dateValidation=DateValidation(id=3, validationCC=2023-05-12, decisionComiteCC=decisionComiteCC, validationTech=2023-05-20, decisionComiteTech=decisionComiteTech, validationTechFinanciaire=2023-06-01, decisionComiteTechFin=decisionComiteTechFin), projetInvestissment=ProjetInvestissment(id=8, CodeProjet=1212, intituleProjet=projet1q, descriptionSomaire=somm1, categorie=cat1a, classification=class1qq, natureBesoin=1natb, type=type1, quantite=121, prixUnitaireTTC=12221, entiteSI=EntiteSI(id=1, name=derbali), budgetInvestissement=BudgetInvestissement(id=19, anneebudgetaire=2023-05-11, coutLogiciel=12, coutMateriel=21, coutEtudeServ=1112, BudgetN=21, BudgetN1=12, BudgetN2=21, BudgetN3=21)))
+2023-05-14 20:59:20.229 DEBUG 76095 --- [http-nio-8081-exec-9] org.hibernate.SQL                        : 
+    select
+        comitetech0_.id as id1_1_,
+        comitetech0_.annee as annee2_1_,
+        comitetech0_.axe_demande as axe_dema3_1_,
+        comitetech0_.date_validation_id as date_val7_1_,
+        comitetech0_.observation_comite as observat4_1_,
+        comitetech0_.projet_investissment_id as projet_i8_1_,
+        comitetech0_.statut_projet as statut_p5_1_,
+        comitetech0_.type_demande as type_dem6_1_ 
+    from
+        comite_technique comitetech0_
+2023-05-14 20:59:20.229 DEBUG 76095 --- [http-nio-8081-exec-10] org.hibernate.SQL                        : 
+    select
+        projetinve0_.id as id1_6_,
+        projetinve0_.code_projet as code_pro2_6_,
+        projetinve0_.budget_investissement_id as budget_11_6_,
+        projetinve0_.categorie as categori3_6_,
+        projetinve0_.classification as classifi4_6_,
+        projetinve0_.description_somaire as descript5_6_,
+        projetinve0_.entitesi_id as entites12_6_,
+        projetinve0_.intitule_projet as intitule6_6_,
+        projetinve0_.nature_besoin as nature_b7_6_,
+        projetinve0_.prix_unitairettc as prix_uni8_6_,
+        projetinve0_.quantite as quantite9_6_,
+        projetinve0_.type as type10_6_ 
+    from
+        projet_investissment projetinve0_
+2023-05-14 20:59:20.237 DEBUG 76095 --- [http-nio-8081-exec-9] org.hibernate.SQL                        : 
+    select
+        datevalida0_.id as id1_3_0_,
+        datevalida0_.decision_comitecc as decision2_3_0_,
+        datevalida0_.decision_comite_tech as decision3_3_0_,
+        datevalida0_.decision_comite_tech_fin as decision4_3_0_,
+        datevalida0_.validationcc as validati5_3_0_,
+        datevalida0_.validation_tech as validati6_3_0_,
+        datevalida0_.validation_tech_financiaire as validati7_3_0_ 
+    from
+        date_validation datevalida0_ 
+    where
+        datevalida0_.id=?
+2023-05-14 20:59:20.239 TRACE 76095 --- [http-nio-8081-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [3]
+2023-05-14 20:59:20.238 DEBUG 76095 --- [http-nio-8081-exec-10] org.hibernate.SQL                        : 
+    select
+        budgetinve0_.id as id1_0_0_,
+        budgetinve0_.budgetn as budgetn2_0_0_,
+        budgetinve0_.budgetn1 as budgetn3_0_0_,
+        budgetinve0_.budgetn2 as budgetn4_0_0_,
+        budgetinve0_.budgetn3 as budgetn5_0_0_,
+        budgetinve0_.anneebudgetaire as anneebud6_0_0_,
+        budgetinve0_.cout_etude_serv as cout_etu7_0_0_,
+        budgetinve0_.cout_logiciel as cout_log8_0_0_,
+        budgetinve0_.cout_materiel as cout_mat9_0_0_ 
+    from
+        budget_investissement budgetinve0_ 
+    where
+        budgetinve0_.id=?
+2023-05-14 20:59:20.241 TRACE 76095 --- [http-nio-8081-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [19]
+2023-05-14 20:59:20.245 DEBUG 76095 --- [http-nio-8081-exec-10] org.hibernate.SQL                        : 
+    select
+        entitesi0_.id as id1_4_0_,
+        entitesi0_.name as name2_4_0_ 
+    from
+        entitesi entitesi0_ 
+    where
+        entitesi0_.id=?
+2023-05-14 20:59:20.246 TRACE 76095 --- [http-nio-8081-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-05-14 20:59:20.247 DEBUG 76095 --- [http-nio-8081-exec-9] org.hibernate.SQL                        : 
+    select
+        projetinve0_.id as id1_6_0_,
+        projetinve0_.code_projet as code_pro2_6_0_,
+        projetinve0_.budget_investissement_id as budget_11_6_0_,
+        projetinve0_.categorie as categori3_6_0_,
+        projetinve0_.classification as classifi4_6_0_,
+        projetinve0_.description_somaire as descript5_6_0_,
+        projetinve0_.entitesi_id as entites12_6_0_,
+        projetinve0_.intitule_projet as intitule6_6_0_,
+        projetinve0_.nature_besoin as nature_b7_6_0_,
+        projetinve0_.prix_unitairettc as prix_uni8_6_0_,
+        projetinve0_.quantite as quantite9_6_0_,
+        projetinve0_.type as type10_6_0_,
+        budgetinve1_.id as id1_0_1_,
+        budgetinve1_.budgetn as budgetn2_0_1_,
+        budgetinve1_.budgetn1 as budgetn3_0_1_,
+        budgetinve1_.budgetn2 as budgetn4_0_1_,
+        budgetinve1_.budgetn3 as budgetn5_0_1_,
+        budgetinve1_.anneebudgetaire as anneebud6_0_1_,
+        budgetinve1_.cout_etude_serv as cout_etu7_0_1_,
+        budgetinve1_.cout_logiciel as cout_log8_0_1_,
+        budgetinve1_.cout_materiel as cout_mat9_0_1_,
+        entitesi2_.id as id1_4_2_,
+        entitesi2_.name as name2_4_2_ 
+    from
+        projet_investissment projetinve0_ 
+    left outer join
+        budget_investissement budgetinve1_ 
+            on projetinve0_.budget_investissement_id=budgetinve1_.id 
+    left outer join
+        entitesi entitesi2_ 
+            on projetinve0_.entitesi_id=entitesi2_.id 
+    where
+        projetinve0_.id=?
+2023-05-14 20:59:20.253 TRACE 76095 --- [http-nio-8081-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [8]
+2023-05-14 20:59:20.256  INFO 76095 --- [http-nio-8081-exec-10] t.e.services.ProjetInvestissmentService  : ProjetInvestissment = ProjetInvestissment(id=8, CodeProjet=1212, intituleProjet=projet1q, descriptionSomaire=somm1, categorie=cat1a, classification=class1qq, natureBesoin=1natb, type=type1, quantite=121, prixUnitaireTTC=12221, entiteSI=EntiteSI(id=1, name=derbali), budgetInvestissement=BudgetInvestissement(id=19, anneebudgetaire=2023-05-11, coutLogiciel=12, coutMateriel=21, coutEtudeServ=1112, BudgetN=21, BudgetN1=12, BudgetN2=21, BudgetN3=21))
+2023-05-14 20:59:20.258  INFO 76095 --- [http-nio-8081-exec-9] t.e.services.ComiteTechniqueService      : ComiteTechnique = ComiteTechnique(id=2, annee=2023-05-17, statutProjet=statutProjet3, axeDemande=3axeDemande, typeDemande=typeDemande3, observationComite=observationComite3, dateValidation=DateValidation(id=3, validationCC=2023-05-12, decisionComiteCC=decisionComiteCC, validationTech=2023-05-20, decisionComiteTech=decisionComiteTech, validationTechFinanciaire=2023-06-01, decisionComiteTechFin=decisionComiteTechFin), projetInvestissment=ProjetInvestissment(id=8, CodeProjet=1212, intituleProjet=projet1q, descriptionSomaire=somm1, categorie=cat1a, classification=class1qq, natureBesoin=1natb, type=type1, quantite=121, prixUnitaireTTC=12221, entiteSI=EntiteSI(id=1, name=derbali), budgetInvestissement=BudgetInvestissement(id=19, anneebudgetaire=2023-05-11, coutLogiciel=12, coutMateriel=21, coutEtudeServ=1112, BudgetN=21, BudgetN1=12, BudgetN2=21, BudgetN3=21)))
+2023-05-14 20:59:23.033 DEBUG 76095 --- [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+    select
+        comitetech0_.id as id1_1_,
+        comitetech0_.annee as annee2_1_,
+        comitetech0_.axe_demande as axe_dema3_1_,
+        comitetech0_.date_validation_id as date_val7_1_,
+        comitetech0_.observation_comite as observat4_1_,
+        comitetech0_.projet_investissment_id as projet_i8_1_,
+        comitetech0_.statut_projet as statut_p5_1_,
+        comitetech0_.type_demande as type_dem6_1_ 
+    from
+        comite_technique comitetech0_
+2023-05-14 20:59:23.035 DEBUG 76095 --- [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+    select
+        datevalida0_.id as id1_3_0_,
+        datevalida0_.decision_comitecc as decision2_3_0_,
+        datevalida0_.decision_comite_tech as decision3_3_0_,
+        datevalida0_.decision_comite_tech_fin as decision4_3_0_,
+        datevalida0_.validationcc as validati5_3_0_,
+        datevalida0_.validation_tech as validati6_3_0_,
+        datevalida0_.validation_tech_financiaire as validati7_3_0_ 
+    from
+        date_validation datevalida0_ 
+    where
+        datevalida0_.id=?
+2023-05-14 20:59:23.035 TRACE 76095 --- [http-nio-8081-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [3]
+2023-05-14 20:59:23.037 DEBUG 76095 --- [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+    select
+        projetinve0_.id as id1_6_0_,
+        projetinve0_.code_projet as code_pro2_6_0_,
+        projetinve0_.budget_investissement_id as budget_11_6_0_,
+        projetinve0_.categorie as categori3_6_0_,
+        projetinve0_.classification as classifi4_6_0_,
+        projetinve0_.description_somaire as descript5_6_0_,
+        projetinve0_.entitesi_id as entites12_6_0_,
+        projetinve0_.intitule_projet as intitule6_6_0_,
+        projetinve0_.nature_besoin as nature_b7_6_0_,
+        projetinve0_.prix_unitairettc as prix_uni8_6_0_,
+        projetinve0_.quantite as quantite9_6_0_,
+        projetinve0_.type as type10_6_0_,
+        budgetinve1_.id as id1_0_1_,
+        budgetinve1_.budgetn as budgetn2_0_1_,
+        budgetinve1_.budgetn1 as budgetn3_0_1_,
+        budgetinve1_.budgetn2 as budgetn4_0_1_,
+        budgetinve1_.budgetn3 as budgetn5_0_1_,
+        budgetinve1_.anneebudgetaire as anneebud6_0_1_,
+        budgetinve1_.cout_etude_serv as cout_etu7_0_1_,
+        budgetinve1_.cout_logiciel as cout_log8_0_1_,
+        budgetinve1_.cout_materiel as cout_mat9_0_1_,
+        entitesi2_.id as id1_4_2_,
+        entitesi2_.name as name2_4_2_ 
+    from
+        projet_investissment projetinve0_ 
+    left outer join
+        budget_investissement budgetinve1_ 
+            on projetinve0_.budget_investissement_id=budgetinve1_.id 
+    left outer join
+        entitesi entitesi2_ 
+            on projetinve0_.entitesi_id=entitesi2_.id 
+    where
+        projetinve0_.id=?
+2023-05-14 20:59:23.038 TRACE 76095 --- [http-nio-8081-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [8]
+2023-05-14 20:59:23.044  INFO 76095 --- [http-nio-8081-exec-1] t.e.services.ComiteTechniqueService      : ComiteTechnique = ComiteTechnique(id=2, annee=2023-05-17, statutProjet=statutProjet3, axeDemande=3axeDemande, typeDemande=typeDemande3, observationComite=observationComite3, dateValidation=DateValidation(id=3, validationCC=2023-05-12, decisionComiteCC=decisionComiteCC, validationTech=2023-05-20, decisionComiteTech=decisionComiteTech, validationTechFinanciaire=2023-06-01, decisionComiteTechFin=decisionComiteTechFin), projetInvestissment=ProjetInvestissment(id=8, CodeProjet=1212, intituleProjet=projet1q, descriptionSomaire=somm1, categorie=cat1a, classification=class1qq, natureBesoin=1natb, type=type1, quantite=121, prixUnitaireTTC=12221, entiteSI=EntiteSI(id=1, name=derbali), budgetInvestissement=BudgetInvestissement(id=19, anneebudgetaire=2023-05-11, coutLogiciel=12, coutMateriel=21, coutEtudeServ=1112, BudgetN=21, BudgetN1=12, BudgetN2=21, BudgetN3=21)))
+2023-05-14 21:06:58.995 DEBUG 76095 --- [http-nio-8081-exec-4] org.hibernate.SQL                        : 
+    select
+        comitetech0_.id as id1_1_,
+        comitetech0_.annee as annee2_1_,
+        comitetech0_.axe_demande as axe_dema3_1_,
+        comitetech0_.date_validation_id as date_val7_1_,
+        comitetech0_.observation_comite as observat4_1_,
+        comitetech0_.projet_investissment_id as projet_i8_1_,
+        comitetech0_.statut_projet as statut_p5_1_,
+        comitetech0_.type_demande as type_dem6_1_ 
+    from
+        comite_technique comitetech0_
+2023-05-14 21:06:59.010 DEBUG 76095 --- [http-nio-8081-exec-4] org.hibernate.SQL                        : 
+    select
+        datevalida0_.id as id1_3_0_,
+        datevalida0_.decision_comitecc as decision2_3_0_,
+        datevalida0_.decision_comite_tech as decision3_3_0_,
+        datevalida0_.decision_comite_tech_fin as decision4_3_0_,
+        datevalida0_.validationcc as validati5_3_0_,
+        datevalida0_.validation_tech as validati6_3_0_,
+        datevalida0_.validation_tech_financiaire as validati7_3_0_ 
+    from
+        date_validation datevalida0_ 
+    where
+        datevalida0_.id=?
+2023-05-14 21:06:59.012 TRACE 76095 --- [http-nio-8081-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [3]
+2023-05-14 21:06:59.016 DEBUG 76095 --- [http-nio-8081-exec-4] org.hibernate.SQL                        : 
+    select
+        projetinve0_.id as id1_6_0_,
+        projetinve0_.code_projet as code_pro2_6_0_,
+        projetinve0_.budget_investissement_id as budget_11_6_0_,
+        projetinve0_.categorie as categori3_6_0_,
+        projetinve0_.classification as classifi4_6_0_,
+        projetinve0_.description_somaire as descript5_6_0_,
+        projetinve0_.entitesi_id as entites12_6_0_,
+        projetinve0_.intitule_projet as intitule6_6_0_,
+        projetinve0_.nature_besoin as nature_b7_6_0_,
+        projetinve0_.prix_unitairettc as prix_uni8_6_0_,
+        projetinve0_.quantite as quantite9_6_0_,
+        projetinve0_.type as type10_6_0_,
+        budgetinve1_.id as id1_0_1_,
+        budgetinve1_.budgetn as budgetn2_0_1_,
+        budgetinve1_.budgetn1 as budgetn3_0_1_,
+        budgetinve1_.budgetn2 as budgetn4_0_1_,
+        budgetinve1_.budgetn3 as budgetn5_0_1_,
+        budgetinve1_.anneebudgetaire as anneebud6_0_1_,
+        budgetinve1_.cout_etude_serv as cout_etu7_0_1_,
+        budgetinve1_.cout_logiciel as cout_log8_0_1_,
+        budgetinve1_.cout_materiel as cout_mat9_0_1_,
+        entitesi2_.id as id1_4_2_,
+        entitesi2_.name as name2_4_2_ 
+    from
+        projet_investissment projetinve0_ 
+    left outer join
+        budget_investissement budgetinve1_ 
+            on projetinve0_.budget_investissement_id=budgetinve1_.id 
+    left outer join
+        entitesi entitesi2_ 
+            on projetinve0_.entitesi_id=entitesi2_.id 
+    where
+        projetinve0_.id=?
+2023-05-14 21:06:59.016 TRACE 76095 --- [http-nio-8081-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [8]
+2023-05-14 21:06:59.022  INFO 76095 --- [http-nio-8081-exec-4] t.e.services.ComiteTechniqueService      : ComiteTechnique = ComiteTechnique(id=2, annee=2023-05-17, statutProjet=statutProjet3, axeDemande=3axeDemande, typeDemande=typeDemande3, observationComite=observationComite3, dateValidation=DateValidation(id=3, validationCC=2023-05-12, decisionComiteCC=decisionComiteCC, validationTech=2023-05-20, decisionComiteTech=decisionComiteTech, validationTechFinanciaire=2023-06-01, decisionComiteTechFin=decisionComiteTechFin), projetInvestissment=ProjetInvestissment(id=8, CodeProjet=1212, intituleProjet=projet1q, descriptionSomaire=somm1, categorie=cat1a, classification=class1qq, natureBesoin=1natb, type=type1, quantite=121, prixUnitaireTTC=12221, entiteSI=EntiteSI(id=1, name=derbali), budgetInvestissement=BudgetInvestissement(id=19, anneebudgetaire=2023-05-11, coutLogiciel=12, coutMateriel=21, coutEtudeServ=1112, BudgetN=21, BudgetN1=12, BudgetN2=21, BudgetN3=21)))
+2023-05-14 21:07:00.050 DEBUG 76095 --- [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+    select
+        fournisseu0_.id as id1_5_,
+        fournisseu0_.code as code2_5_,
+        fournisseu0_.contact as contact3_5_,
+        fournisseu0_.immat_fiscal as immat_fi4_5_,
+        fournisseu0_.mail as mail5_5_,
+        fournisseu0_.name as name6_5_,
+        fournisseu0_.site_web as site_web7_5_,
+        fournisseu0_.tel as tel8_5_ 
+    from
+        fournisseur fournisseu0_
+2023-05-14 21:07:00.051 DEBUG 76095 --- [http-nio-8081-exec-6] org.hibernate.SQL                        : 
+    select
+        contatdema0_.id as id1_2_,
+        contatdema0_.budget_investissement_id as budget_13_2_,
+        contatdema0_.date_acquisition as date_acq2_2_,
+        contatdema0_.date_reception_definitive as date_rec3_2_,
+        contatdema0_.date_reception_provisoire as date_rec4_2_,
+        contatdema0_.delai_garantie as delai_ga5_2_,
+        contatdema0_.devise as devise6_2_,
+        contatdema0_.fournisseur_id as fournis14_2_,
+        contatdema0_.intitule_projet as intitule7_2_,
+        contatdema0_.montantht as montanth8_2_,
+        contatdema0_.montantttc as montantt9_2_,
+        contatdema0_.objet_contrat as objet_c10_2_,
+        contatdema0_.observation as observa11_2_,
+        contatdema0_.reference as referen12_2_ 
+    from
+        contat_de_marche contatdema0_
+2023-05-14 21:07:00.057 DEBUG 76095 --- [http-nio-8081-exec-6] org.hibernate.SQL                        : 
+    select
+        budgetinve0_.id as id1_0_0_,
+        budgetinve0_.budgetn as budgetn2_0_0_,
+        budgetinve0_.budgetn1 as budgetn3_0_0_,
+        budgetinve0_.budgetn2 as budgetn4_0_0_,
+        budgetinve0_.budgetn3 as budgetn5_0_0_,
+        budgetinve0_.anneebudgetaire as anneebud6_0_0_,
+        budgetinve0_.cout_etude_serv as cout_etu7_0_0_,
+        budgetinve0_.cout_logiciel as cout_log8_0_0_,
+        budgetinve0_.cout_materiel as cout_mat9_0_0_ 
+    from
+        budget_investissement budgetinve0_ 
+    where
+        budgetinve0_.id=?
+2023-05-14 21:07:00.057  INFO 76095 --- [http-nio-8081-exec-7] tn.esprit.services.FournisseurService    : Fournisseur = Fournisseur(id=1, code=1, name=aa, immatFiscal=aa, contact=cc, mail=aa@aa.a, siteWeb=a, tel=1111)
+2023-05-14 21:07:00.058 TRACE 76095 --- [http-nio-8081-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [18]
+2023-05-14 21:07:00.058 DEBUG 76095 --- [http-nio-8081-exec-8] org.hibernate.SQL                        : 
     select
         budgetinve0_.id as id1_0_,
         budgetinve0_.budgetn as budgetn2_0_,
@@ -74,25 +715,179 @@
         budgetinve0_.cout_materiel as cout_mat9_0_ 
     from
         budget_investissement budgetinve0_
-2023-03-09 13:01:18.461  INFO 781 --- [http-nio-8081-exec-5] t.e.s.BudgetInvestissementService        : user = BudgetInvestissement(id=1, anneebudgetaire=2021, coutLogiciel=500, coutMateriel=250, coutEtudeServ=1200, BudgetN=1000, BudgetN1=0, BudgetN2=0, BudgetN3=0)
-2023-03-09 13:01:18.462  INFO 781 --- [http-nio-8081-exec-5] t.e.s.BudgetInvestissementService        : user = BudgetInvestissement(id=2, anneebudgetaire=2023, coutLogiciel=1000, coutMateriel=20000, coutEtudeServ=500, BudgetN=30000, BudgetN1=100, BudgetN2=299, BudgetN3=3000)
-2023-03-09 13:02:11.508 DEBUG 781 --- [http-nio-8081-exec-6] org.hibernate.SQL                        : 
+2023-05-14 21:07:00.058  INFO 76095 --- [http-nio-8081-exec-7] tn.esprit.services.FournisseurService    : Fournisseur = Fournisseur(id=2, code=1111, name=111, immatFiscal=sss, contact=seif, mail=s@s.s, siteWeb=ss, tel=1212)
+2023-05-14 21:07:00.061 DEBUG 76095 --- [http-nio-8081-exec-6] org.hibernate.SQL                        : 
     select
-        budgetinve0_.id as id1_0_,
-        budgetinve0_.budgetn as budgetn2_0_,
-        budgetinve0_.budgetn1 as budgetn3_0_,
-        budgetinve0_.budgetn2 as budgetn4_0_,
-        budgetinve0_.budgetn3 as budgetn5_0_,
-        budgetinve0_.anneebudgetaire as anneebud6_0_,
-        budgetinve0_.cout_etude_serv as cout_etu7_0_,
-        budgetinve0_.cout_logiciel as cout_log8_0_,
-        budgetinve0_.cout_materiel as cout_mat9_0_ 
+        fournisseu0_.id as id1_5_0_,
+        fournisseu0_.code as code2_5_0_,
+        fournisseu0_.contact as contact3_5_0_,
+        fournisseu0_.immat_fiscal as immat_fi4_5_0_,
+        fournisseu0_.mail as mail5_5_0_,
+        fournisseu0_.name as name6_5_0_,
+        fournisseu0_.site_web as site_web7_5_0_,
+        fournisseu0_.tel as tel8_5_0_ 
     from
-        budget_investissement budgetinve0_
-2023-03-09 13:02:11.512  INFO 781 --- [http-nio-8081-exec-6] t.e.s.BudgetInvestissementService        : user = BudgetInvestissement(id=1, anneebudgetaire=2021, coutLogiciel=500, coutMateriel=250, coutEtudeServ=1200, BudgetN=1000, BudgetN1=0, BudgetN2=0, BudgetN3=0)
-2023-03-09 13:02:11.512  INFO 781 --- [http-nio-8081-exec-6] t.e.s.BudgetInvestissementService        : user = BudgetInvestissement(id=2, anneebudgetaire=2023, coutLogiciel=1000, coutMateriel=20000, coutEtudeServ=500, BudgetN=30000, BudgetN1=100, BudgetN2=299, BudgetN3=3000)
-2023-03-09 14:31:22.079  WARN 781 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m18s753ms).
-2023-03-09 15:00:35.418  WARN 781 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m42s235ms).
-2023-03-09 15:54:07.213  INFO 781 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-03-09 15:54:07.257  INFO 781 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-03-09 15:54:07.267  INFO 781 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+        fournisseur fournisseu0_ 
+    where
+        fournisseu0_.id=?
+2023-05-14 21:07:00.061 TRACE 76095 --- [http-nio-8081-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [2]
+2023-05-14 21:07:00.063  INFO 76095 --- [http-nio-8081-exec-8] t.e.s.BudgetInvestissementService        : user = BudgetInvestissement(id=1, anneebudgetaire=21-02-2023, coutLogiciel=1222, coutMateriel=10000, coutEtudeServ=30, BudgetN=1234, BudgetN1=23000, BudgetN2=30003, BudgetN3=54000)
+2023-05-14 21:07:00.063  INFO 76095 --- [http-nio-8081-exec-8] t.e.s.BudgetInvestissementService        : user = BudgetInvestissement(id=2, anneebudgetaire=2023, coutLogiciel=1000, coutMateriel=20000, coutEtudeServ=500, BudgetN=30000, BudgetN1=100, BudgetN2=299, BudgetN3=3000)
+2023-05-14 21:07:00.063  INFO 76095 --- [http-nio-8081-exec-8] t.e.s.BudgetInvestissementService        : user = BudgetInvestissement(id=18, anneebudgetaire=2023-04-12, coutLogiciel=3, coutMateriel=4, coutEtudeServ=5, BudgetN=6, BudgetN1=7, BudgetN2=8, BudgetN3=9)
+2023-05-14 21:07:00.063  INFO 76095 --- [http-nio-8081-exec-8] t.e.s.BudgetInvestissementService        : user = BudgetInvestissement(id=19, anneebudgetaire=2023-05-11, coutLogiciel=12, coutMateriel=21, coutEtudeServ=1112, BudgetN=21, BudgetN1=12, BudgetN2=21, BudgetN3=21)
+2023-05-14 21:07:00.064 DEBUG 76095 --- [http-nio-8081-exec-6] org.hibernate.SQL                        : 
+    select
+        fournisseu0_.id as id1_5_0_,
+        fournisseu0_.code as code2_5_0_,
+        fournisseu0_.contact as contact3_5_0_,
+        fournisseu0_.immat_fiscal as immat_fi4_5_0_,
+        fournisseu0_.mail as mail5_5_0_,
+        fournisseu0_.name as name6_5_0_,
+        fournisseu0_.site_web as site_web7_5_0_,
+        fournisseu0_.tel as tel8_5_0_ 
+    from
+        fournisseur fournisseu0_ 
+    where
+        fournisseu0_.id=?
+2023-05-14 21:07:00.065 TRACE 76095 --- [http-nio-8081-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-05-14 21:07:00.068  INFO 76095 --- [http-nio-8081-exec-6] t.esprit.services.ContatDeMarcheService  : ContatDeMarche = ContatDeMarche(id=3, reference=ref, objetContrat=objetContrat, intituleProjet=intituleProjet, montantHT=montantHT, montantTTC=montantTTC, devise=devise, delaiGarantie=2023-05-12, observation=observation, dateAcquisition=2023-05-27, dateReceptionProvisoire=2023-05-13, dateReceptionDefinitive=2023-06-01, budgetInvestissement=BudgetInvestissement(id=18, anneebudgetaire=2023-04-12, coutLogiciel=3, coutMateriel=4, coutEtudeServ=5, BudgetN=6, BudgetN1=7, BudgetN2=8, BudgetN3=9), fournisseur=Fournisseur(id=2, code=1111, name=111, immatFiscal=sss, contact=seif, mail=s@s.s, siteWeb=ss, tel=1212))
+2023-05-14 21:07:00.068  INFO 76095 --- [http-nio-8081-exec-6] t.esprit.services.ContatDeMarcheService  : ContatDeMarche = ContatDeMarche(id=4, reference=2102, objetContrat=statutProjet, intituleProjet=axeDemande, montantHT=12223, montantTTC=13444, devise=1000, delaiGarantie=21-02-2023, observation=observation, dateAcquisition=0026-08-16, dateReceptionProvisoire=0026-08-16, dateReceptionDefinitive=0026-08-16, budgetInvestissement=BudgetInvestissement(id=18, anneebudgetaire=2023-04-12, coutLogiciel=3, coutMateriel=4, coutEtudeServ=5, BudgetN=6, BudgetN1=7, BudgetN2=8, BudgetN3=9), fournisseur=Fournisseur(id=1, code=1, name=aa, immatFiscal=aa, contact=cc, mail=aa@aa.a, siteWeb=a, tel=1111))
+2023-05-14 21:06:59.696 DEBUG 76095 --- [http-nio-8081-exec-10] org.hibernate.SQL                        : 
+    select
+        comitetech0_.id as id1_1_,
+        comitetech0_.annee as annee2_1_,
+        comitetech0_.axe_demande as axe_dema3_1_,
+        comitetech0_.date_validation_id as date_val7_1_,
+        comitetech0_.observation_comite as observat4_1_,
+        comitetech0_.projet_investissment_id as projet_i8_1_,
+        comitetech0_.statut_projet as statut_p5_1_,
+        comitetech0_.type_demande as type_dem6_1_ 
+    from
+        comite_technique comitetech0_
+2023-05-14 21:06:59.697 DEBUG 76095 --- [http-nio-8081-exec-10] org.hibernate.SQL                        : 
+    select
+        datevalida0_.id as id1_3_0_,
+        datevalida0_.decision_comitecc as decision2_3_0_,
+        datevalida0_.decision_comite_tech as decision3_3_0_,
+        datevalida0_.decision_comite_tech_fin as decision4_3_0_,
+        datevalida0_.validationcc as validati5_3_0_,
+        datevalida0_.validation_tech as validati6_3_0_,
+        datevalida0_.validation_tech_financiaire as validati7_3_0_ 
+    from
+        date_validation datevalida0_ 
+    where
+        datevalida0_.id=?
+2023-05-14 21:06:59.698 TRACE 76095 --- [http-nio-8081-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [3]
+2023-05-14 21:06:59.699 DEBUG 76095 --- [http-nio-8081-exec-10] org.hibernate.SQL                        : 
+    select
+        projetinve0_.id as id1_6_0_,
+        projetinve0_.code_projet as code_pro2_6_0_,
+        projetinve0_.budget_investissement_id as budget_11_6_0_,
+        projetinve0_.categorie as categori3_6_0_,
+        projetinve0_.classification as classifi4_6_0_,
+        projetinve0_.description_somaire as descript5_6_0_,
+        projetinve0_.entitesi_id as entites12_6_0_,
+        projetinve0_.intitule_projet as intitule6_6_0_,
+        projetinve0_.nature_besoin as nature_b7_6_0_,
+        projetinve0_.prix_unitairettc as prix_uni8_6_0_,
+        projetinve0_.quantite as quantite9_6_0_,
+        projetinve0_.type as type10_6_0_,
+        budgetinve1_.id as id1_0_1_,
+        budgetinve1_.budgetn as budgetn2_0_1_,
+        budgetinve1_.budgetn1 as budgetn3_0_1_,
+        budgetinve1_.budgetn2 as budgetn4_0_1_,
+        budgetinve1_.budgetn3 as budgetn5_0_1_,
+        budgetinve1_.anneebudgetaire as anneebud6_0_1_,
+        budgetinve1_.cout_etude_serv as cout_etu7_0_1_,
+        budgetinve1_.cout_logiciel as cout_log8_0_1_,
+        budgetinve1_.cout_materiel as cout_mat9_0_1_,
+        entitesi2_.id as id1_4_2_,
+        entitesi2_.name as name2_4_2_ 
+    from
+        projet_investissment projetinve0_ 
+    left outer join
+        budget_investissement budgetinve1_ 
+            on projetinve0_.budget_investissement_id=budgetinve1_.id 
+    left outer join
+        entitesi entitesi2_ 
+            on projetinve0_.entitesi_id=entitesi2_.id 
+    where
+        projetinve0_.id=?
+2023-05-14 21:06:59.700 TRACE 76095 --- [http-nio-8081-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [8]
+2023-05-14 21:06:59.703  INFO 76095 --- [http-nio-8081-exec-10] t.e.services.ComiteTechniqueService      : ComiteTechnique = ComiteTechnique(id=2, annee=2023-05-17, statutProjet=statutProjet3, axeDemande=3axeDemande, typeDemande=typeDemande3, observationComite=observationComite3, dateValidation=DateValidation(id=3, validationCC=2023-05-12, decisionComiteCC=decisionComiteCC, validationTech=2023-05-20, decisionComiteTech=decisionComiteTech, validationTechFinanciaire=2023-06-01, decisionComiteTechFin=decisionComiteTechFin), projetInvestissment=ProjetInvestissment(id=8, CodeProjet=1212, intituleProjet=projet1q, descriptionSomaire=somm1, categorie=cat1a, classification=class1qq, natureBesoin=1natb, type=type1, quantite=121, prixUnitaireTTC=12221, entiteSI=EntiteSI(id=1, name=derbali), budgetInvestissement=BudgetInvestissement(id=19, anneebudgetaire=2023-05-11, coutLogiciel=12, coutMateriel=21, coutEtudeServ=1112, BudgetN=21, BudgetN1=12, BudgetN2=21, BudgetN3=21)))
+2023-05-14 21:07:12.368  WARN 76095 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=28s2ms), soft-evicting connections from pool.
+2023-05-14 21:12:29.247  INFO 76095 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-14 21:12:29.274  INFO 76095 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-14 21:12:29.279  INFO 76095 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-14 21:12:38.023  INFO 78501 --- [restartedMain] tn.esprit.PfeApplication                 : Starting PfeApplication using Java 15.0.2 on Derbalis-MacBook-Pro.local with PID 78501 (/Users/seif/Desktop/PFE/target/classes started by seif in /Users/seif/Desktop/PFE)
+2023-05-14 21:12:38.025  INFO 78501 --- [restartedMain] tn.esprit.PfeApplication                 : No active profile set, falling back to default profiles: default
+2023-05-14 21:12:38.099  INFO 78501 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-14 21:12:38.100  INFO 78501 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-14 21:12:39.512  INFO 78501 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-14 21:12:39.603  INFO 78501 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 8 JPA repository interfaces.
+2023-05-14 21:12:40.834  INFO 78501 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-05-14 21:12:40.872  INFO 78501 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-14 21:12:40.872  INFO 78501 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-05-14 21:12:40.956  INFO 78501 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2023-05-14 21:12:40.956  INFO 78501 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2856 ms
+2023-05-14 21:12:41.160  INFO 78501 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-14 21:12:41.228  INFO 78501 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2023-05-14 21:12:41.429  INFO 78501 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-14 21:12:41.549  INFO 78501 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-14 21:12:41.760  INFO 78501 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-14 21:12:41.785  INFO 78501 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-05-14 21:12:42.601  INFO 78501 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-14 21:12:42.611  INFO 78501 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-14 21:12:43.460  WARN 78501 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-14 21:12:43.718  INFO 78501 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-14 21:12:43.943  INFO 78501 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api'
+2023-05-14 21:12:44.455  INFO 78501 --- [restartedMain] tn.esprit.PfeApplication                 : Started PfeApplication in 7.078 seconds (JVM running for 8.012)
+2023-05-14 21:12:51.248  INFO 78501 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-14 21:12:51.249  INFO 78501 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-14 21:12:51.251  INFO 78501 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-14 21:12:51.341 DEBUG 78501 --- [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+    select
+        entitesi0_.id as id1_4_,
+        entitesi0_.name as name2_4_ 
+    from
+        entitesi entitesi0_
+2023-05-14 21:12:51.368  INFO 78501 --- [http-nio-8081-exec-1] tn.esprit.services.EntiteSIService       : user = EntiteSI(id=1, name=derbali)
+2023-05-14 21:12:51.368  INFO 78501 --- [http-nio-8081-exec-1] tn.esprit.services.EntiteSIService       : user = EntiteSI(id=5, name=neww)
+2023-05-14 21:12:51.887 DEBUG 78501 --- [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+    select
+        entitesi0_.id as id1_4_,
+        entitesi0_.name as name2_4_ 
+    from
+        entitesi entitesi0_
+2023-05-14 21:12:51.887 DEBUG 78501 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_7_,
+        user0_.mail as mail2_7_,
+        user0_.address as address3_7_,
+        user0_.birthdate as birthdat4_7_,
+        user0_.direction as directio5_7_,
+        user0_.entitesi_id as entites13_7_,
+        user0_.lastname as lastname6_7_,
+        user0_.name as name7_7_,
+        user0_.password as password8_7_,
+        user0_.place_of_birth as place_of9_7_,
+        user0_.role as role10_7_,
+        user0_.sexe as sexe11_7_,
+        user0_.tel as tel12_7_ 
+    from
+        user user0_
+2023-05-14 21:12:51.896  INFO 78501 --- [http-nio-8081-exec-3] tn.esprit.services.EntiteSIService       : user = EntiteSI(id=1, name=derbali)
+2023-05-14 21:12:51.896  INFO 78501 --- [http-nio-8081-exec-3] tn.esprit.services.EntiteSIService       : user = EntiteSI(id=5, name=neww)
+2023-05-14 21:12:51.903 DEBUG 78501 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        entitesi0_.id as id1_4_0_,
+        entitesi0_.name as name2_4_0_ 
+    from
+        entitesi entitesi0_ 
+    where
+        entitesi0_.id=?
+2023-05-14 21:12:51.906 TRACE 78501 --- [http-nio-8081-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-05-14 21:12:51.913  INFO 78501 --- [http-nio-8081-exec-2] tn.esprit.services.UserService           : user = User(id=5, name=seif, lastname=derbali, birthdate=0024-03-18, Mail=seif@derbali.com, password=1234, placeOfBirth=tunisia, address=tunis, tel=54000000, sexe=Male, direction=administration, role=Manager, token=null, entiteSI=EntiteSI(id=1, name=derbali))
+2023-05-14 21:18:16.576  INFO 78501 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-14 21:18:16.585  INFO 78501 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-14 21:18:16.605  INFO 78501 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

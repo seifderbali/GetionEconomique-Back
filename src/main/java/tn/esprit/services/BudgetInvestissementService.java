@@ -102,4 +102,11 @@ public class BudgetInvestissementService implements IBudgetInvestissementService
 
         return listBudgetInvestissements;
     }
+
+    @Override
+    public BudgetInvestissement findByContrat(long id) {
+        return budgetInvestissementRepository.findContrat(id);
+    }
+
+
 }

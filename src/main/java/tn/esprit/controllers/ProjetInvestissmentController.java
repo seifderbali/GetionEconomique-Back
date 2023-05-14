@@ -2,6 +2,7 @@ package tn.esprit.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import tn.esprit.entities.BudgetInvestissement;
 import tn.esprit.entities.ProjetInvestissment;
 import tn.esprit.services.IBudgetInvestissementService;
 import tn.esprit.services.IEntiteSIService;
@@ -57,5 +58,24 @@ public class ProjetInvestissmentController {
     List<ProjetInvestissment> search(@PathVariable("keyword") String keyword)
     {
         return Ps.searchProjetInvestissment(keyword);
+    }
+
+    @GetMapping("/findBudget/{id}")
+    BudgetInvestissement searchbudget(@PathVariable("id") long id )
+    {
+        return Ps.findBudget(id);
+    }
+
+    @GetMapping("/findByEntite/{id}")
+    List<BudgetInvestissement> findByEntite(@PathVariable("id") long id )
+    {
+
+        return Ps.findByEntite(id);
+    }
+
+    @GetMapping("/findProject/{id}")
+    ProjetInvestissment findProject(@PathVariable("id") long id )
+    {
+        return Ps.findProject(id);
     }
 }

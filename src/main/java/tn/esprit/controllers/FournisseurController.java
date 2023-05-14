@@ -50,4 +50,10 @@ public class FournisseurController {
     {
         return Fs.searchFournisseur(keyword);
     }
+
+    @GetMapping("/findByContrat/{id}")
+    Fournisseur findByContrat(@PathVariable("id") int id)
+    {
+        return Fs.findByContrat(id);
+    }
 }
