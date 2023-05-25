@@ -34,6 +34,40 @@ public class ComiteTechniqueService implements IComiteTechniqueService{
         return listComiteTechniques;        }
 
     @Override
+    public List<ComiteTechnique> retreiveAllComiteTechniqueInv() {
+        List<ComiteTechnique> listComiteTechniques = new ArrayList<ComiteTechnique>();
+        try {
+            listComiteTechniques = (List<ComiteTechnique>) comiteTechniqueRepositry.findAllInv();
+            for(ComiteTechnique c : listComiteTechniques)
+            {
+                //c.setUsers(null);
+                log.info("ComiteTechnique = "+c);
+            }}
+        catch(Exception e)
+        {
+            log.info("error = "+e);
+        }
+
+        return listComiteTechniques;        }
+
+    @Override
+    public List<ComiteTechnique> retreiveAllComiteTechniqueMain() {
+        List<ComiteTechnique> listComiteTechniques = new ArrayList<ComiteTechnique>();
+        try {
+            listComiteTechniques = (List<ComiteTechnique>) comiteTechniqueRepositry.findAllMain();
+            for(ComiteTechnique c : listComiteTechniques)
+            {
+                //c.setUsers(null);
+                log.info("ComiteTechnique = "+c);
+            }}
+        catch(Exception e)
+        {
+            log.info("error = "+e);
+        }
+
+        return listComiteTechniques;        }
+
+    @Override
     public ComiteTechnique addComiteTechnique(ComiteTechnique c) {
         try
         {
@@ -89,6 +123,40 @@ public class ComiteTechniqueService implements IComiteTechniqueService{
         List<ComiteTechnique> listComiteTechniques = new ArrayList<ComiteTechnique>();
         try {
             listComiteTechniques = (List<ComiteTechnique>) comiteTechniqueRepositry.search(keyword);
+            for(ComiteTechnique c : listComiteTechniques)
+            {
+                log.info("EntiteSI = "+c);
+            }}
+        catch(Exception e)
+        {
+            log.info("error = "+e);
+        }
+
+        return listComiteTechniques;
+    }
+
+    @Override
+    public List<ComiteTechnique> searchComiteTechniqueInv(String keyword) {
+        List<ComiteTechnique> listComiteTechniques = new ArrayList<ComiteTechnique>();
+        try {
+            listComiteTechniques = (List<ComiteTechnique>) comiteTechniqueRepositry.searchInv(keyword);
+            for(ComiteTechnique c : listComiteTechniques)
+            {
+                log.info("EntiteSI = "+c);
+            }}
+        catch(Exception e)
+        {
+            log.info("error = "+e);
+        }
+
+        return listComiteTechniques;
+    }
+
+    @Override
+    public List<ComiteTechnique> searchComiteTechniqueMain(String keyword) {
+        List<ComiteTechnique> listComiteTechniques = new ArrayList<ComiteTechnique>();
+        try {
+            listComiteTechniques = (List<ComiteTechnique>) comiteTechniqueRepositry.searchMain(keyword);
             for(ComiteTechnique c : listComiteTechniques)
             {
                 log.info("EntiteSI = "+c);

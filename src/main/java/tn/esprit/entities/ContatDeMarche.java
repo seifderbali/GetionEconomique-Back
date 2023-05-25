@@ -51,9 +51,10 @@ public class ContatDeMarche {
     Date dateReceptionDefinitive;
 
 
+
     @ManyToOne
     //@JsonIgnore
-    BudgetInvestissement budgetInvestissement;
+    Budget budget;
 
     @ManyToOne
     //@JsonIgnore

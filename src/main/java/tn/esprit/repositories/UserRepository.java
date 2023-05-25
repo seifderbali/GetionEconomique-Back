@@ -26,4 +26,9 @@ public interface UserRepository extends CrudRepository<User, Long> {
     @Query("select u from User u where u.Mail like %?1%")
     User findByMail(String mail);
 
+
+    @Query("select u from User u where u.id =:#{#id}")
+    User findUserById(long id);
+
+
 }

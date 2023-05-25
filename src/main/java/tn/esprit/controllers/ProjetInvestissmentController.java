@@ -2,9 +2,8 @@ package tn.esprit.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import tn.esprit.entities.BudgetInvestissement;
 import tn.esprit.entities.ProjetInvestissment;
-import tn.esprit.services.IBudgetInvestissementService;
+import tn.esprit.services.IBudgetService;
 import tn.esprit.services.IEntiteSIService;
 import tn.esprit.services.IProjetInvestissmentService;
 
@@ -22,14 +21,13 @@ public class ProjetInvestissmentController {
     IEntiteSIService Es;
 
     @Autowired
-    IBudgetInvestissementService Bs;
+    IBudgetService Bs;
 
-    @PostMapping("/addProjetInvestissment/{ide}/{idb}")
-    void add(@RequestBody ProjetInvestissment p, @PathVariable("ide") int ide, @PathVariable("idb") int idb)
+    @PostMapping("/addProjetInvestissment/{idb}")
+    void add(@RequestBody ProjetInvestissment p, @PathVariable("idb") int idb)
     {
 
-        p.setEntiteSI(Es.retrieveEntiteSI(ide));
-        p.setBudgetInvestissement(Bs.retrieveBudgetInvestissement(idb));
+        p.setBudget(Bs.retrieveBudget(idb));
         Ps.addProjetInvestissmentr(p);
     }
 
@@ -59,23 +57,28 @@ public class ProjetInvestissmentController {
     {
         return Ps.searchProjetInvestissment(keyword);
     }
+    /*
+       @GetMapping("/findBudget/{id}")
+       BudgetInvestissement searchbudget(@PathVariable("id") long id )
+       {
+           return Ps.findBudget(id);
+       }
 
-    @GetMapping("/findBudget/{id}")
-    BudgetInvestissement searchbudget(@PathVariable("id") long id )
-    {
-        return Ps.findBudget(id);
-    }
 
-    @GetMapping("/findByEntite/{id}")
-    List<BudgetInvestissement> findByEntite(@PathVariable("id") long id )
-    {
+       @GetMapping("/findByEntite/{id}")
+       List<BudgetInvestissement> findByEntite(@PathVariable("id") long id )
+       {
 
-        return Ps.findByEntite(id);
-    }
+           return Ps.findByEntite(id);
+       }
 
+     */
     @GetMapping("/findProject/{id}")
     ProjetInvestissment findProject(@PathVariable("id") long id )
     {
         return Ps.findProject(id);
     }
+
+
+
 }

@@ -3,6 +3,7 @@ package tn.esprit.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import tn.esprit.entities.ComiteTechnique;
+import tn.esprit.services.IBudgetService;
 import tn.esprit.services.IComiteTechniqueService;
 import tn.esprit.services.IDateValidationService;
 import tn.esprit.services.IProjetInvestissmentService;
@@ -20,14 +21,14 @@ public class ComiteTechniqueController {
     @Autowired
     IDateValidationService Ds;
     @Autowired
-    IProjetInvestissmentService Ps;
+    IBudgetService Bs;
 
 
     @PostMapping("/addComiteTechnique/{idd}/{idp}")
     void add(@RequestBody ComiteTechnique c, @PathVariable("idd") int idd, @PathVariable("idp") int idp)
     {
         c.setDateValidation(Ds.retrieveValidation(idd));
-        c.setProjetInvestissment(Ps.retrieveProjetInvestissment(idp));
+        c.setBudget(Bs.retrieveBudget(idp));
         Cs.addComiteTechnique(c);
     }
 
@@ -46,6 +47,16 @@ public class ComiteTechniqueController {
     {
         return Cs.retreiveAllComiteTechnique();
     }
+    @GetMapping("/displayComiteTechniqueInvestissement")
+    List<ComiteTechnique> displayInv()
+    {
+        return Cs.retreiveAllComiteTechniqueInv();
+    }
+    @GetMapping("/displayComiteTechniqueMaintenance")
+    List<ComiteTechnique> displayMain()
+    {
+        return Cs.retreiveAllComiteTechniqueMain();
+    }
     @GetMapping("/find/{id}")
     ComiteTechnique find(@PathVariable("id") int id)
     {
@@ -56,5 +67,14 @@ public class ComiteTechniqueController {
     List<ComiteTechnique> search(@PathVariable("keyword") String keyword)
     {
         return Cs.searchComiteTechnique(keyword);
+    }
+    @GetMapping("/searchInv/{keyword}")
+    List<ComiteTechnique> searchInv(@PathVariable("keyword") String keyword)
+    {
+        return Cs.searchComiteTechniqueInv(keyword);
+    }    @GetMapping("/searchMain/{keyword}")
+    List<ComiteTechnique> searchMain(@PathVariable("keyword") String keyword)
+    {
+        return Cs.searchComiteTechniqueMain(keyword);
     }
 }

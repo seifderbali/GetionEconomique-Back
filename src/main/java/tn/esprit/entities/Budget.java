@@ -1,12 +1,10 @@
+
 package tn.esprit.entities;
 
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
-import java.util.Set;
 
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Entity
@@ -15,12 +13,14 @@ import java.util.Set;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "budgetInvestissement")
-public class BudgetInvestissement {
+@Table(name = "budget")
+public class Budget {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
     Long id;
+    @Column(name="libelle")
+    String libelle;
     @Column(name="anneebudgetaire")
     String anneebudgetaire;
     @Column(name="coutLogiciel")
@@ -37,16 +37,10 @@ public class BudgetInvestissement {
     String BudgetN2;
     @Column(name="BudgetN3")
     String BudgetN3;
+    @Column(name="Type")
+    String type;
+    @ManyToOne
+    // @JsonIgnore
+    private EntiteSI entiteSI;
 
-
-/*
-
-    @OneToMany(cascade = CascadeType.ALL,mappedBy="budgetInvestissement")
-    Set<ContatDeMarche> contatDeMarches;
-
-    @OneToOne(mappedBy = "budgetInvestissement")
-  //  @JsonIgnore
-    ProjetInvestissment projetInvestissment ;
-
- */
 }

@@ -37,5 +37,5 @@ public class ComiteTechnique {
 
     @ManyToOne
    //@JsonIgnore
-    ProjetInvestissment projetInvestissment ;
+    Budget budget  ;
 }

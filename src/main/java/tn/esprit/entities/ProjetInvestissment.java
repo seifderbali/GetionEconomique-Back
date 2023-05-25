@@ -39,13 +39,10 @@ public class ProjetInvestissment {
     @Column(name="prixUnitaireTTC")
     long prixUnitaireTTC;
 
-    @ManyToOne
-   // @JsonIgnore
-    private EntiteSI entiteSI;
 
     @OneToOne
    // @JsonIgnore
-    BudgetInvestissement budgetInvestissement;
+    Budget budget;
 
 /*
     @OneToMany(cascade = CascadeType.ALL,mappedBy="projetInvestissment")

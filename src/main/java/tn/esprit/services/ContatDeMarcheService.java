@@ -20,7 +20,24 @@ public class ContatDeMarcheService implements IContatDeMarcheService {
     public List<ContatDeMarche> retreiveAllContatDeMarche() {
         List<ContatDeMarche> listContatDeMarches = new ArrayList<ContatDeMarche>();
         try {
-            listContatDeMarches = (List<ContatDeMarche>) contatDeMarcheRepository.findAll();
+            listContatDeMarches = (List<ContatDeMarche>) contatDeMarcheRepository.findContratInvestissement();
+            for(ContatDeMarche c: listContatDeMarches)
+            {
+                //   u.setUsers(null);
+                log.info("ContatDeMarche = "+c);
+            }}
+        catch(Exception e)
+        {
+            log.info("error = "+e);
+        }
+
+        return listContatDeMarches;    }
+
+    @Override
+    public List<ContatDeMarche> retreiveAllContatDeMarcheMaintenance() {
+        List<ContatDeMarche> listContatDeMarches = new ArrayList<ContatDeMarche>();
+        try {
+            listContatDeMarches = (List<ContatDeMarche>) contatDeMarcheRepository.findContratMaintenance();
             for(ContatDeMarche c: listContatDeMarches)
             {
                 //   u.setUsers(null);
@@ -100,6 +117,38 @@ public class ContatDeMarcheService implements IContatDeMarcheService {
         return listContatDeMarches;        }
 
     @Override
+    public List<ContatDeMarche> searchContatDeMarcheInv(String keyword) {
+        List<ContatDeMarche> listContatDeMarches = new ArrayList<ContatDeMarche>();
+        try {
+            listContatDeMarches = (List<ContatDeMarche>) contatDeMarcheRepository.searchinv(keyword);
+            for(ContatDeMarche c : listContatDeMarches)
+            {
+                log.info("ContatDeMarche = "+c);
+            }}
+        catch(Exception e)
+        {
+            log.info("error = "+e);
+        }
+
+        return listContatDeMarches;        }
+
+    @Override
+    public List<ContatDeMarche> searchContatDeMarcheMain(String keyword) {
+        List<ContatDeMarche> listContatDeMarches = new ArrayList<ContatDeMarche>();
+        try {
+            listContatDeMarches = (List<ContatDeMarche>) contatDeMarcheRepository.searchmain(keyword);
+            for(ContatDeMarche c : listContatDeMarches)
+            {
+                log.info("ContatDeMarche = "+c);
+            }}
+        catch(Exception e)
+        {
+            log.info("error = "+e);
+        }
+
+        return listContatDeMarches;        }
+
+    @Override
     public List<ContatDeMarche> findBudget(long id) {
         List<ContatDeMarche> listContatDeMarches = new ArrayList<ContatDeMarche>();
         try {
@@ -129,5 +178,6 @@ public class ContatDeMarcheService implements IContatDeMarcheService {
             log.info("error = "+e);
         }
 
-        return listContatDeMarches;        }
+        return listContatDeMarches;
+}
 }

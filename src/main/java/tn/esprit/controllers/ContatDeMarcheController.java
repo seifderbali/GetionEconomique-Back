@@ -3,9 +3,7 @@ package tn.esprit.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import tn.esprit.entities.ContatDeMarche;
-import tn.esprit.services.IBudgetInvestissementService;
-import tn.esprit.services.IContatDeMarcheService;
-import tn.esprit.services.IFournisseurService;
+import tn.esprit.services.*;
 
 import java.util.List;
 
@@ -19,7 +17,7 @@ public class ContatDeMarcheController {
     IContatDeMarcheService Cs;
 
     @Autowired
-    IBudgetInvestissementService Bs;
+    IBudgetService Bs;
 
     @Autowired
     IFournisseurService Fs;
@@ -28,7 +26,14 @@ public class ContatDeMarcheController {
     @PostMapping("/addContatDeMarche/{idb}/{idf}")
     void add(@RequestBody ContatDeMarche c, @PathVariable("idb") long idb, @PathVariable("idf") long idf)
     {
-        c.setBudgetInvestissement(Bs.retrieveBudgetInvestissement(idb));
+        c.setBudget(Bs.retrieveBudget(idb));
+        c.setFournisseur(Fs.retrieveFournisseur(idf));
+        Cs.addContatDeMarche(c);
+    }
+    @PostMapping("/addContatDeMarcheMaintenance/{idb}/{idf}")
+    void addContratMaintenance(@RequestBody ContatDeMarche c, @PathVariable("idb") long idb, @PathVariable("idf") long idf)
+    {
+        c.setBudget(Bs.retrieveBudget(idb));
         c.setFournisseur(Fs.retrieveFournisseur(idf));
         Cs.addContatDeMarche(c);
     }
@@ -48,6 +53,11 @@ public class ContatDeMarcheController {
     {
         return Cs.retreiveAllContatDeMarche();
     }
+    @GetMapping("/displayContatDeMarcheMaintenance")
+    List<ContatDeMarche> displayMaintenance()
+    {
+        return Cs.retreiveAllContatDeMarcheMaintenance();
+    }
     @GetMapping("/find/{id}")
     ContatDeMarche find(@PathVariable("id") int id)
     {
@@ -58,6 +68,14 @@ public class ContatDeMarcheController {
     List<ContatDeMarche> search(@PathVariable("keyword") String keyword)
     {
         return Cs.searchContatDeMarche(keyword);
+    }    @GetMapping("/searchInv/{keyword}")
+    List<ContatDeMarche> searchInv(@PathVariable("keyword") String keyword)
+    {
+        return Cs.searchContatDeMarcheInv(keyword);
+    }    @GetMapping("/searchMain/{keyword}")
+    List<ContatDeMarche> searchMain(@PathVariable("keyword") String keyword)
+    {
+        return Cs.searchContatDeMarcheMain(keyword);
     }
     @GetMapping("/findByBudget/{id}")
     List<ContatDeMarche> findByBudget(@PathVariable("id") long id)

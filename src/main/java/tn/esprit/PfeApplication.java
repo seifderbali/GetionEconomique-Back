@@ -14,5 +14,4 @@ public class PfeApplication {
 		SpringApplication.run(PfeApplication.class, args);
 		System.out.println("Hello Word");
 	}
-
 }
