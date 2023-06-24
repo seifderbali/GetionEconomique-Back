@@ -447,3 +447,403 @@ Caused by: java.net.ConnectException: Connection refused
 2023-06-24 13:18:17.120  INFO 3417 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-06-24 13:18:17.123  INFO 3417 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
 2023-06-24 13:18:17.127  INFO 3417 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-06-24 13:42:10.938  INFO 5343 --- [restartedMain] tn.esprit.PfeApplication                 : Starting PfeApplication using Java 15.0.2 on Derbalis-MacBook-Pro.local with PID 5343 (/Users/seif/Desktop/git/GetionEconomique-Back/target/classes started by seif in /Users/seif/Desktop/git/GetionEconomique-Back)
+2023-06-24 13:42:10.942  INFO 5343 --- [restartedMain] tn.esprit.PfeApplication                 : No active profile set, falling back to default profiles: default
+2023-06-24 13:42:11.099  INFO 5343 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-24 13:42:11.099  INFO 5343 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-24 13:42:12.757  INFO 5343 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-24 13:42:12.868  INFO 5343 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 10 JPA repository interfaces.
+2023-06-24 13:42:13.917  INFO 5343 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-06-24 13:42:13.932  INFO 5343 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-24 13:42:13.932  INFO 5343 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-06-24 13:42:14.052  INFO 5343 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2023-06-24 13:42:14.053  INFO 5343 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2953 ms
+2023-06-24 13:42:14.331  INFO 5343 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-24 13:42:14.406  INFO 5343 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2023-06-24 13:42:14.670  INFO 5343 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-24 13:42:14.819  INFO 5343 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-24 13:42:15.107  INFO 5343 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-24 13:42:15.131  INFO 5343 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-06-24 13:42:16.333  INFO 5343 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-24 13:42:16.343  INFO 5343 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-24 13:42:17.605  WARN 5343 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-24 13:42:17.937  INFO 5343 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-24 13:42:18.229  INFO 5343 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api'
+2023-06-24 13:42:19.051  INFO 5343 --- [restartedMain] tn.esprit.PfeApplication                 : Started PfeApplication in 9.284 seconds (JVM running for 10.45)
+2023-06-24 13:43:05.934  INFO 5343 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-24 13:43:05.938  INFO 5343 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-24 13:43:05.957  INFO 5343 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2023-06-24 13:43:06.651 DEBUG 5343 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        contatdema0_.id as id1_2_,
+        contatdema0_.budget_id as budget_13_2_,
+        contatdema0_.date_acquisition as date_acq2_2_,
+        contatdema0_.date_reception_definitive as date_rec3_2_,
+        contatdema0_.date_reception_provisoire as date_rec4_2_,
+        contatdema0_.delai_garantie as delai_ga5_2_,
+        contatdema0_.devise as devise6_2_,
+        contatdema0_.fournisseur_id as fournis14_2_,
+        contatdema0_.intitule_projet as intitule7_2_,
+        contatdema0_.montantht as montanth8_2_,
+        contatdema0_.montantttc as montantt9_2_,
+        contatdema0_.objet_contrat as objet_c10_2_,
+        contatdema0_.observation as observa11_2_,
+        contatdema0_.reference as referen12_2_ 
+    from
+        contat_de_marche contatdema0_ 
+    order by
+        contatdema0_.date_acquisition
+2023-06-24 13:43:06.737 DEBUG 5343 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        budget0_.id as id1_0_0_,
+        budget0_.budgetn as budgetn2_0_0_,
+        budget0_.budgetn1 as budgetn3_0_0_,
+        budget0_.budgetn2 as budgetn4_0_0_,
+        budget0_.budgetn3 as budgetn5_0_0_,
+        budget0_.anneebudgetaire as anneebud6_0_0_,
+        budget0_.cout_etude_serv as cout_etu7_0_0_,
+        budget0_.cout_logiciel as cout_log8_0_0_,
+        budget0_.cout_materiel as cout_mat9_0_0_,
+        budget0_.entitesi_id as entites12_0_0_,
+        budget0_.libelle as libelle10_0_0_,
+        budget0_.type as type11_0_0_,
+        entitesi1_.id as id1_5_1_,
+        entitesi1_.name as name2_5_1_ 
+    from
+        budget budget0_ 
+    left outer join
+        entitesi entitesi1_ 
+            on budget0_.entitesi_id=entitesi1_.id 
+    where
+        budget0_.id=?
+2023-06-24 13:43:06.741 TRACE 5343 --- [http-nio-8081-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [11]
+2023-06-24 13:43:06.767 DEBUG 5343 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        fournisseu0_.id as id1_7_0_,
+        fournisseu0_.code as code2_7_0_,
+        fournisseu0_.contact as contact3_7_0_,
+        fournisseu0_.immat_fiscal as immat_fi4_7_0_,
+        fournisseu0_.mail as mail5_7_0_,
+        fournisseu0_.name as name6_7_0_,
+        fournisseu0_.site_web as site_web7_7_0_,
+        fournisseu0_.tel as tel8_7_0_ 
+    from
+        fournisseur fournisseu0_ 
+    where
+        fournisseu0_.id=?
+2023-06-24 13:43:06.780 TRACE 5343 --- [http-nio-8081-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [3]
+2023-06-24 13:43:06.795 DEBUG 5343 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        budget0_.id as id1_0_0_,
+        budget0_.budgetn as budgetn2_0_0_,
+        budget0_.budgetn1 as budgetn3_0_0_,
+        budget0_.budgetn2 as budgetn4_0_0_,
+        budget0_.budgetn3 as budgetn5_0_0_,
+        budget0_.anneebudgetaire as anneebud6_0_0_,
+        budget0_.cout_etude_serv as cout_etu7_0_0_,
+        budget0_.cout_logiciel as cout_log8_0_0_,
+        budget0_.cout_materiel as cout_mat9_0_0_,
+        budget0_.entitesi_id as entites12_0_0_,
+        budget0_.libelle as libelle10_0_0_,
+        budget0_.type as type11_0_0_,
+        entitesi1_.id as id1_5_1_,
+        entitesi1_.name as name2_5_1_ 
+    from
+        budget budget0_ 
+    left outer join
+        entitesi entitesi1_ 
+            on budget0_.entitesi_id=entitesi1_.id 
+    where
+        budget0_.id=?
+2023-06-24 13:43:06.796 TRACE 5343 --- [http-nio-8081-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [9]
+2023-06-24 13:43:06.799 DEBUG 5343 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        budget0_.id as id1_0_0_,
+        budget0_.budgetn as budgetn2_0_0_,
+        budget0_.budgetn1 as budgetn3_0_0_,
+        budget0_.budgetn2 as budgetn4_0_0_,
+        budget0_.budgetn3 as budgetn5_0_0_,
+        budget0_.anneebudgetaire as anneebud6_0_0_,
+        budget0_.cout_etude_serv as cout_etu7_0_0_,
+        budget0_.cout_logiciel as cout_log8_0_0_,
+        budget0_.cout_materiel as cout_mat9_0_0_,
+        budget0_.entitesi_id as entites12_0_0_,
+        budget0_.libelle as libelle10_0_0_,
+        budget0_.type as type11_0_0_,
+        entitesi1_.id as id1_5_1_,
+        entitesi1_.name as name2_5_1_ 
+    from
+        budget budget0_ 
+    left outer join
+        entitesi entitesi1_ 
+            on budget0_.entitesi_id=entitesi1_.id 
+    where
+        budget0_.id=?
+2023-06-24 13:43:06.800 TRACE 5343 --- [http-nio-8081-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [10]
+2023-06-24 13:43:06.803 DEBUG 5343 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        fournisseu0_.id as id1_7_0_,
+        fournisseu0_.code as code2_7_0_,
+        fournisseu0_.contact as contact3_7_0_,
+        fournisseu0_.immat_fiscal as immat_fi4_7_0_,
+        fournisseu0_.mail as mail5_7_0_,
+        fournisseu0_.name as name6_7_0_,
+        fournisseu0_.site_web as site_web7_7_0_,
+        fournisseu0_.tel as tel8_7_0_ 
+    from
+        fournisseur fournisseu0_ 
+    where
+        fournisseu0_.id=?
+2023-06-24 13:43:06.804 TRACE 5343 --- [http-nio-8081-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [5]
+2023-06-24 13:43:06.806 DEBUG 5343 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        budget0_.id as id1_0_0_,
+        budget0_.budgetn as budgetn2_0_0_,
+        budget0_.budgetn1 as budgetn3_0_0_,
+        budget0_.budgetn2 as budgetn4_0_0_,
+        budget0_.budgetn3 as budgetn5_0_0_,
+        budget0_.anneebudgetaire as anneebud6_0_0_,
+        budget0_.cout_etude_serv as cout_etu7_0_0_,
+        budget0_.cout_logiciel as cout_log8_0_0_,
+        budget0_.cout_materiel as cout_mat9_0_0_,
+        budget0_.entitesi_id as entites12_0_0_,
+        budget0_.libelle as libelle10_0_0_,
+        budget0_.type as type11_0_0_,
+        entitesi1_.id as id1_5_1_,
+        entitesi1_.name as name2_5_1_ 
+    from
+        budget budget0_ 
+    left outer join
+        entitesi entitesi1_ 
+            on budget0_.entitesi_id=entitesi1_.id 
+    where
+        budget0_.id=?
+2023-06-24 13:43:06.807 TRACE 5343 --- [http-nio-8081-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [2]
+2023-06-24 13:43:06.813 DEBUG 5343 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        fournisseu0_.id as id1_7_0_,
+        fournisseu0_.code as code2_7_0_,
+        fournisseu0_.contact as contact3_7_0_,
+        fournisseu0_.immat_fiscal as immat_fi4_7_0_,
+        fournisseu0_.mail as mail5_7_0_,
+        fournisseu0_.name as name6_7_0_,
+        fournisseu0_.site_web as site_web7_7_0_,
+        fournisseu0_.tel as tel8_7_0_ 
+    from
+        fournisseur fournisseu0_ 
+    where
+        fournisseu0_.id=?
+2023-06-24 13:43:06.814 TRACE 5343 --- [http-nio-8081-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [6]
+2023-06-24 13:43:06.816 DEBUG 5343 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        budget0_.id as id1_0_0_,
+        budget0_.budgetn as budgetn2_0_0_,
+        budget0_.budgetn1 as budgetn3_0_0_,
+        budget0_.budgetn2 as budgetn4_0_0_,
+        budget0_.budgetn3 as budgetn5_0_0_,
+        budget0_.anneebudgetaire as anneebud6_0_0_,
+        budget0_.cout_etude_serv as cout_etu7_0_0_,
+        budget0_.cout_logiciel as cout_log8_0_0_,
+        budget0_.cout_materiel as cout_mat9_0_0_,
+        budget0_.entitesi_id as entites12_0_0_,
+        budget0_.libelle as libelle10_0_0_,
+        budget0_.type as type11_0_0_,
+        entitesi1_.id as id1_5_1_,
+        entitesi1_.name as name2_5_1_ 
+    from
+        budget budget0_ 
+    left outer join
+        entitesi entitesi1_ 
+            on budget0_.entitesi_id=entitesi1_.id 
+    where
+        budget0_.id=?
+2023-06-24 13:43:06.816 TRACE 5343 --- [http-nio-8081-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-06-24 13:43:06.818 DEBUG 5343 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        fournisseu0_.id as id1_7_0_,
+        fournisseu0_.code as code2_7_0_,
+        fournisseu0_.contact as contact3_7_0_,
+        fournisseu0_.immat_fiscal as immat_fi4_7_0_,
+        fournisseu0_.mail as mail5_7_0_,
+        fournisseu0_.name as name6_7_0_,
+        fournisseu0_.site_web as site_web7_7_0_,
+        fournisseu0_.tel as tel8_7_0_ 
+    from
+        fournisseur fournisseu0_ 
+    where
+        fournisseu0_.id=?
+2023-06-24 13:43:06.819 TRACE 5343 --- [http-nio-8081-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-06-24 13:43:06.821 DEBUG 5343 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        budget0_.id as id1_0_0_,
+        budget0_.budgetn as budgetn2_0_0_,
+        budget0_.budgetn1 as budgetn3_0_0_,
+        budget0_.budgetn2 as budgetn4_0_0_,
+        budget0_.budgetn3 as budgetn5_0_0_,
+        budget0_.anneebudgetaire as anneebud6_0_0_,
+        budget0_.cout_etude_serv as cout_etu7_0_0_,
+        budget0_.cout_logiciel as cout_log8_0_0_,
+        budget0_.cout_materiel as cout_mat9_0_0_,
+        budget0_.entitesi_id as entites12_0_0_,
+        budget0_.libelle as libelle10_0_0_,
+        budget0_.type as type11_0_0_,
+        entitesi1_.id as id1_5_1_,
+        entitesi1_.name as name2_5_1_ 
+    from
+        budget budget0_ 
+    left outer join
+        entitesi entitesi1_ 
+            on budget0_.entitesi_id=entitesi1_.id 
+    where
+        budget0_.id=?
+2023-06-24 13:43:06.822 TRACE 5343 --- [http-nio-8081-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [6]
+2023-06-24 13:43:06.827 DEBUG 5343 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        budget0_.id as id1_0_0_,
+        budget0_.budgetn as budgetn2_0_0_,
+        budget0_.budgetn1 as budgetn3_0_0_,
+        budget0_.budgetn2 as budgetn4_0_0_,
+        budget0_.budgetn3 as budgetn5_0_0_,
+        budget0_.anneebudgetaire as anneebud6_0_0_,
+        budget0_.cout_etude_serv as cout_etu7_0_0_,
+        budget0_.cout_logiciel as cout_log8_0_0_,
+        budget0_.cout_materiel as cout_mat9_0_0_,
+        budget0_.entitesi_id as entites12_0_0_,
+        budget0_.libelle as libelle10_0_0_,
+        budget0_.type as type11_0_0_,
+        entitesi1_.id as id1_5_1_,
+        entitesi1_.name as name2_5_1_ 
+    from
+        budget budget0_ 
+    left outer join
+        entitesi entitesi1_ 
+            on budget0_.entitesi_id=entitesi1_.id 
+    where
+        budget0_.id=?
+2023-06-24 13:43:06.828 TRACE 5343 --- [http-nio-8081-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [7]
+2023-06-24 13:43:06.830 DEBUG 5343 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        budget0_.id as id1_0_0_,
+        budget0_.budgetn as budgetn2_0_0_,
+        budget0_.budgetn1 as budgetn3_0_0_,
+        budget0_.budgetn2 as budgetn4_0_0_,
+        budget0_.budgetn3 as budgetn5_0_0_,
+        budget0_.anneebudgetaire as anneebud6_0_0_,
+        budget0_.cout_etude_serv as cout_etu7_0_0_,
+        budget0_.cout_logiciel as cout_log8_0_0_,
+        budget0_.cout_materiel as cout_mat9_0_0_,
+        budget0_.entitesi_id as entites12_0_0_,
+        budget0_.libelle as libelle10_0_0_,
+        budget0_.type as type11_0_0_,
+        entitesi1_.id as id1_5_1_,
+        entitesi1_.name as name2_5_1_ 
+    from
+        budget budget0_ 
+    left outer join
+        entitesi entitesi1_ 
+            on budget0_.entitesi_id=entitesi1_.id 
+    where
+        budget0_.id=?
+2023-06-24 13:43:06.831 TRACE 5343 --- [http-nio-8081-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [3]
+2023-06-24 13:43:06.832 DEBUG 5343 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        fournisseu0_.id as id1_7_0_,
+        fournisseu0_.code as code2_7_0_,
+        fournisseu0_.contact as contact3_7_0_,
+        fournisseu0_.immat_fiscal as immat_fi4_7_0_,
+        fournisseu0_.mail as mail5_7_0_,
+        fournisseu0_.name as name6_7_0_,
+        fournisseu0_.site_web as site_web7_7_0_,
+        fournisseu0_.tel as tel8_7_0_ 
+    from
+        fournisseur fournisseu0_ 
+    where
+        fournisseu0_.id=?
+2023-06-24 13:43:06.833 TRACE 5343 --- [http-nio-8081-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [2]
+2023-06-24 13:43:06.835 DEBUG 5343 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        budget0_.id as id1_0_0_,
+        budget0_.budgetn as budgetn2_0_0_,
+        budget0_.budgetn1 as budgetn3_0_0_,
+        budget0_.budgetn2 as budgetn4_0_0_,
+        budget0_.budgetn3 as budgetn5_0_0_,
+        budget0_.anneebudgetaire as anneebud6_0_0_,
+        budget0_.cout_etude_serv as cout_etu7_0_0_,
+        budget0_.cout_logiciel as cout_log8_0_0_,
+        budget0_.cout_materiel as cout_mat9_0_0_,
+        budget0_.entitesi_id as entites12_0_0_,
+        budget0_.libelle as libelle10_0_0_,
+        budget0_.type as type11_0_0_,
+        entitesi1_.id as id1_5_1_,
+        entitesi1_.name as name2_5_1_ 
+    from
+        budget budget0_ 
+    left outer join
+        entitesi entitesi1_ 
+            on budget0_.entitesi_id=entitesi1_.id 
+    where
+        budget0_.id=?
+2023-06-24 13:43:06.836 TRACE 5343 --- [http-nio-8081-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [5]
+2023-06-24 13:43:06.837 DEBUG 5343 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        fournisseu0_.id as id1_7_0_,
+        fournisseu0_.code as code2_7_0_,
+        fournisseu0_.contact as contact3_7_0_,
+        fournisseu0_.immat_fiscal as immat_fi4_7_0_,
+        fournisseu0_.mail as mail5_7_0_,
+        fournisseu0_.name as name6_7_0_,
+        fournisseu0_.site_web as site_web7_7_0_,
+        fournisseu0_.tel as tel8_7_0_ 
+    from
+        fournisseur fournisseu0_ 
+    where
+        fournisseu0_.id=?
+2023-06-24 13:43:06.838 TRACE 5343 --- [http-nio-8081-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4]
+2023-06-24 13:43:06.840 DEBUG 5343 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        budget0_.id as id1_0_0_,
+        budget0_.budgetn as budgetn2_0_0_,
+        budget0_.budgetn1 as budgetn3_0_0_,
+        budget0_.budgetn2 as budgetn4_0_0_,
+        budget0_.budgetn3 as budgetn5_0_0_,
+        budget0_.anneebudgetaire as anneebud6_0_0_,
+        budget0_.cout_etude_serv as cout_etu7_0_0_,
+        budget0_.cout_logiciel as cout_log8_0_0_,
+        budget0_.cout_materiel as cout_mat9_0_0_,
+        budget0_.entitesi_id as entites12_0_0_,
+        budget0_.libelle as libelle10_0_0_,
+        budget0_.type as type11_0_0_,
+        entitesi1_.id as id1_5_1_,
+        entitesi1_.name as name2_5_1_ 
+    from
+        budget budget0_ 
+    left outer join
+        entitesi entitesi1_ 
+            on budget0_.entitesi_id=entitesi1_.id 
+    where
+        budget0_.id=?
+2023-06-24 13:43:06.841 TRACE 5343 --- [http-nio-8081-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [8]
+2023-06-24 13:43:06.844 DEBUG 5343 --- [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        budget0_.id as id1_0_0_,
+        budget0_.budgetn as budgetn2_0_0_,
+        budget0_.budgetn1 as budgetn3_0_0_,
+        budget0_.budgetn2 as budgetn4_0_0_,
+        budget0_.budgetn3 as budgetn5_0_0_,
+        budget0_.anneebudgetaire as anneebud6_0_0_,
+        budget0_.cout_etude_serv as cout_etu7_0_0_,
+        budget0_.cout_logiciel as cout_log8_0_0_,
+        budget0_.cout_materiel as cout_mat9_0_0_,
+        budget0_.entitesi_id as entites12_0_0_,
+        budget0_.libelle as libelle10_0_0_,
+        budget0_.type as type11_0_0_,
+        entitesi1_.id as id1_5_1_,
+        entitesi1_.name as name2_5_1_ 
+    from
+        budget budget0_ 
+    left outer join
+        entitesi entitesi1_ 
+            on budget0_.entitesi_id=entitesi1_.id 
+    where
+        budget0_.id=?
+2023-06-24 13:43:06.845 TRACE 5343 --- [http-nio-8081-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4]
