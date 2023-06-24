@@ -29,4 +29,9 @@ public interface ContatDeMarcheRepository extends CrudRepository<ContatDeMarche,
     List<ContatDeMarche> findContratInvestissement();
     @Query("select c from ContatDeMarche c where c.budget.type = 'Maintenance'")
     List<ContatDeMarche> findContratMaintenance();
+    @Query("select c from ContatDeMarche c ORDER BY c.dateAcquisition")
+    List<ContatDeMarche> findContras();
+
+
+
 }

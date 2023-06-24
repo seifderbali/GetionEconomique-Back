@@ -13,5 +13,7 @@ public interface IEntiteSIService {
     EntiteSI retrieveEntiteSI(long id);
     List<EntiteSI> searchEntiteSI(String keyword);
     EntiteSI findByName(String name);
+    String findBudget(long id);
+    String allbudget();
 
 }

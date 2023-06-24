@@ -53,5 +53,16 @@ public class EntiteSIController {
         return Es.searchEntiteSI(keyword);
     }
 
+    @GetMapping("/findBudget/{id}")
+    String findBudget(@PathVariable("id") long id)
+    {
+        return Es.findBudget(id);
+    }
+    @GetMapping("/AllBudget")
+    String allBudget()
+    {
+        return Es.allbudget();
+    }
+
 }
 

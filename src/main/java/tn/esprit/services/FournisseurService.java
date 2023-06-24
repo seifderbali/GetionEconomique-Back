@@ -104,4 +104,11 @@ public class FournisseurService implements IFournisseurService{
     public Fournisseur findByContrat(long id) {
         return fournisseurRepository.findByContrat(id);
     }
+
+    @Override
+    public String findBudget(long id) {
+
+
+        return  fournisseurRepository.findBudget(id);
+    }
 }

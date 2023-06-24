@@ -114,4 +114,14 @@ public class EntiteSIService implements IEntiteSIService{
         }
         return u ;
     }
+
+    @Override
+    public String findBudget(long id) {
+        return entiteSIRepository.findBudget(id);
+    }
+
+    @Override
+    public String allbudget() {
+        return entiteSIRepository.allbudget();
+    }
 }

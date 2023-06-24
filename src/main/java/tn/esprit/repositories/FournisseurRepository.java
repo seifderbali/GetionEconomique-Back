@@ -17,4 +17,7 @@ public interface FournisseurRepository extends CrudRepository<Fournisseur, Long>
 
     @Query("select b.fournisseur from ContatDeMarche b where b.id =:#{#id}")
     Fournisseur findByContrat(long id );
+
+    @Query("select sum(b.montantTTC) from ContatDeMarche b where b.fournisseur.id =:#{#id}")
+    String findBudget(long id );
 }

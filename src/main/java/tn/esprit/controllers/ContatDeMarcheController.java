@@ -88,4 +88,10 @@ public class ContatDeMarcheController {
         return Cs.findFournisseur(id);
     }
 
+    @GetMapping("/findContrats")
+    List<ContatDeMarche> findContrats()
+    {
+        return Cs.findContras();
+    }
+
 }

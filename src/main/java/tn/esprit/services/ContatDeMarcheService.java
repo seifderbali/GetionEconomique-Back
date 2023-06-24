@@ -180,4 +180,9 @@ public class ContatDeMarcheService implements IContatDeMarcheService {
 
         return listContatDeMarches;
 }
+
+    @Override
+    public List<ContatDeMarche> findContras() {
+        return contatDeMarcheRepository.findContras();
+    }
 }

@@ -56,4 +56,10 @@ public class FournisseurController {
     {
         return Fs.findByContrat(id);
     }
+
+    @GetMapping("/findBudget/{id}")
+    String findBudget(@PathVariable("id") int id)
+    {
+        return Fs.findBudget(id);
+    }
 }

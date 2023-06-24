@@ -19,5 +19,6 @@ public interface IContatDeMarcheService {
     List<ContatDeMarche> searchContatDeMarcheMain(String keyword);
     List<ContatDeMarche> findBudget(long id );
     List<ContatDeMarche> findFournisseur(long id );
+    List<ContatDeMarche> findContras();
 
 }

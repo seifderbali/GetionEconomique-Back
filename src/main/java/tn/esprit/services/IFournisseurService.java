@@ -14,6 +14,7 @@ public interface IFournisseurService {
     Fournisseur retrieveFournisseur(long id);
     List<Fournisseur> searchFournisseur(String keyword);
     Fournisseur findByContrat(long id);
+    String findBudget(long id);
 
 }
 

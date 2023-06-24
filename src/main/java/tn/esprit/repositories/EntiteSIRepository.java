@@ -16,4 +16,8 @@ public interface EntiteSIRepository extends CrudRepository<EntiteSI, Long> {
     List<EntiteSI> search(String keyword);
     @Query("select (e) from EntiteSI e where e.name=:#{#name}")
     EntiteSI finfByName(@Param("name") String name );
+    @Query("select sum(e.BudgetN) from Budget e where e.entiteSI.id=:#{#id}")
+    String findBudget(@Param("id") long id );
+    @Query("select sum(e.BudgetN) from Budget e ")
+    String allbudget();
 }
