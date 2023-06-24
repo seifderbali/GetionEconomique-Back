@@ -35,9 +35,9 @@
          stage('Scan') {
                steps {
                  sh "mvn sonar:sonar \
-                    -Dsonar.projectKey=PFE \
-                    -Dsonar.host.url=http://192.168.0.4:9000 \
-                    -Dsonar.login=a375046e95a39542a3a8c40f98ad94c13da19e7a"
+                       -Dsonar.projectKey=BiatDSI \
+                       -Dsonar.host.url=http://192.168.0.4:9000 \
+                       -Dsonar.login=ba50ade8299f806ff7cc57344c82c476fd7ca9cd"
                     echo "sonar succefully"
 
                       }
