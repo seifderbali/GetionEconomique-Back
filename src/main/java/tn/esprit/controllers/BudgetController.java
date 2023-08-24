@@ -91,4 +91,46 @@ public class BudgetController {
         return Bs.findByEntiteMain(id);
     }
 
+    @GetMapping("/displayBudgetInvestissementsSortByDate")
+    List<Budget> displayBudgetInvestissementsSortByDate()
+    {
+        return Bs.retreiveAllBudgetInvestissementSortByDate();
+    }
+    @GetMapping("/displayBudgetInvestissementsSortByCoutEtudeServ")
+    List<Budget> displayBudgetInvestissementsSortByCoutEtudeServ()
+    {
+        return Bs.retreiveAllBudgetInvestissementSortByCoutEtudeServ();
+    }
+    @GetMapping("/displayBudgetInvestissementsSortByCoutLogiciel")
+    List<Budget> displayBudgetInvestissementsSortByCoutLogiciel()
+    {
+        return Bs.retreiveAllBudgetInvestissementSortByCoutLogiciel();
+    }
+    @GetMapping("/displayBudgetInvestissementsSortByCoutMateriel")
+    List<Budget> displayBudgetInvestissementsSortByCoutMateriel()
+    {
+        return Bs.retreiveAllBudgetInvestissementSortByCoutMateriel();
+    }
+
+
+    @GetMapping("/displayBudgetMaintenancesSortByDate")
+    List<Budget> displayBudgetMaintenancesSortByDate()
+    {
+        return Bs.retreiveAllBudgetMaintenanceSortByDate();
+    }
+    @GetMapping("/displayBudgetMaintenancesSortByCoutEtudeServ")
+    List<Budget> displayBudgetMaintenancesSortByCoutEtudeServ()
+    {
+        return Bs.retreiveAllBudgetMaintenanceSortByCoutEtudeServ();
+    }
+    @GetMapping("/displayBudgetMaintenancesSortByCoutLogiciel")
+    List<Budget> displayBudgetMaintenancesSortByCoutLogiciel()
+    {
+        return Bs.retreiveAllBudgetMaintenanceSortByCoutLogiciel();
+    }
+    @GetMapping("/displayBudgetMaintenancesSortByCoutMateriel")
+    List<Budget> displayBudgetMaintenancesSortByCoutMateriel()
+    {
+        return Bs.retreiveAllBudgetMaintenanceSortByCoutMateriel();
+    }
 }

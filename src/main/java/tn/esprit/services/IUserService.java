@@ -13,5 +13,6 @@ public interface IUserService {
     String retrieveUserRole(long id);
     List<User> searchUser(String keyword);
     User DoLogin(String  mail, String mdp);
+    User recover(String mail);
 
 }

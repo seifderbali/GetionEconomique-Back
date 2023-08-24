@@ -82,7 +82,11 @@ public class UserController {
 
         return e;
     }
-
+    @PostMapping("/recover/{mail}")
+    void recver(@PathVariable("mail") String mail)
+    {
+        Us.recover(mail);
+    }
     /*
     private String getJWTToken(String username) {
         String secretKey = "mySecretKey";
