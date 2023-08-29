@@ -45,7 +45,7 @@
 
             stage('Nexus Deploy') {
                  steps {
-                     sh 'mvn deploy -e'
+ 		     sh "mvn deploy -DskipTests";
             }
 
 
