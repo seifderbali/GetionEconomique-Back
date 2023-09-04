@@ -20,8 +20,13 @@ public class DateValidationJunitTest {
 
     Date date = sdf.parse("12-02-2023");
 
+<<<<<<< HEAD
     DateValidation d1 = new DateValidation(11L,date,"statutProjet",date,"typeDemande",date,"decisionComiteTechFin",1L);
     DateValidation d2 = new DateValidation(11L,date,"statutProjet",date,"typeDemande",date,"decisionComiteTechFin",1L);
+=======
+    DateValidation d1 = new DateValidation(11L,date,"statutProjet",date,"typeDemande",date,"decisionComiteTechFin");
+    DateValidation d2 = new DateValidation(11L,date,"statutProjet",date,"typeDemande",date,"decisionComiteTechFin");
+>>>>>>> 763fddc1fc727b9ebef5b02fcfeac6510d13db9f
 
     public DateValidationJunitTest() throws ParseException {
     }

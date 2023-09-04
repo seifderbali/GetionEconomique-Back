@@ -16,8 +16,13 @@ public class ProjetInvestissementJunitTest {
     @Autowired
     ProjetInvestissmentService projetInvestissmentService;
     Budget budget = new Budget();
+<<<<<<< HEAD
     ProjetInvestissment p1 = new ProjetInvestissment(11L,"11","intituleProjet","descriptionSomaire","categorie","classification","natureBesoin","type",100,1000,1L,budget);
     ProjetInvestissment p2 = new ProjetInvestissment(55L,"22","intituleProjet","descriptionSomaire","categorie","classification","natureBesoin","type",222,2222,1L,budget);
+=======
+    ProjetInvestissment p1 = new ProjetInvestissment(11L,"11","intituleProjet","descriptionSomaire","categorie","classification","natureBesoin","type",100,1000,budget);
+    ProjetInvestissment p2 = new ProjetInvestissment(55L,"22","intituleProjet","descriptionSomaire","categorie","classification","natureBesoin","type",222,2222,budget);
+>>>>>>> 763fddc1fc727b9ebef5b02fcfeac6510d13db9f
 
 
     @Test

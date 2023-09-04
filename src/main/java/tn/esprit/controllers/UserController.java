@@ -80,7 +80,11 @@ public class UserController {
         }
         return e;
     }
+<<<<<<< HEAD
     @GetMapping("/recover/{mail}")
+=======
+    @PostMapping("/recover/{mail}")
+>>>>>>> 763fddc1fc727b9ebef5b02fcfeac6510d13db9f
     void recver(@PathVariable("mail") String mail)
     {
         Us.recover(mail);

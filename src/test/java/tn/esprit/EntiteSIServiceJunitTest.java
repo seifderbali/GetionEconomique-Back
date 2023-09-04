@@ -15,8 +15,13 @@ public class EntiteSIServiceJunitTest {
 
         @Autowired
         EntiteSIService entiteSIService;
+<<<<<<< HEAD
     EntiteSI e1 = new EntiteSI(11L,"EntiteSI",1L);
     EntiteSI e2 = new EntiteSI(51L,"EntiteSI",1L);
+=======
+    EntiteSI e1 = new EntiteSI(11L,"EntiteSI");
+    EntiteSI e2 = new EntiteSI(51L,"EntiteSI");
+>>>>>>> 763fddc1fc727b9ebef5b02fcfeac6510d13db9f
 
         @Test
         @Order(1)

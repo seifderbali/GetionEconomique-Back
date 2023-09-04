@@ -14,8 +14,13 @@ import java.util.List;
 public class FournisseurServiceJunitTest {
         @Autowired
         FournisseurService fournisseurServicer;
+<<<<<<< HEAD
     Fournisseur f1 = new Fournisseur(11L,"1111","name","immatFiscal","contact","mail","siteWeb","tel",1L);
     Fournisseur f2 = new Fournisseur(51L,"5511","name","immatFiscal","contact","mail","siteWeb","tel",1L);
+=======
+    Fournisseur f1 = new Fournisseur(11L,"1111","name","immatFiscal","contact","mail","siteWeb","tel");
+    Fournisseur f2 = new Fournisseur(51L,"5511","name","immatFiscal","contact","mail","siteWeb","tel");
+>>>>>>> 763fddc1fc727b9ebef5b02fcfeac6510d13db9f
 
         @Test
         @Order(1)

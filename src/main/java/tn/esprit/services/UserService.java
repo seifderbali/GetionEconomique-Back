@@ -202,8 +202,13 @@ public class UserService implements IUserService{
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
         mailSender.setHost("smtp.gmail.com");
         mailSender.setPort(587);
+<<<<<<< HEAD
         mailSender.setUsername("derbaliseif.biat@gmail.com");
         mailSender.setPassword("npwbjteezsqaflly");
+=======
+        mailSender.setUsername("seifderbali.biat@gmail.com");
+        mailSender.setPassword("qtaujafsdxszxxcs");
+>>>>>>> 763fddc1fc727b9ebef5b02fcfeac6510d13db9f
 
         Properties properties = new Properties();
         properties.setProperty("mail.smtp.auth", "true");

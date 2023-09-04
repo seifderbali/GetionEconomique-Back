@@ -25,8 +25,13 @@ public class DepenseJunitTest {
 
     Date date = sdf.parse("12-02-2023");
 
+<<<<<<< HEAD
     Depense d1 = new Depense(11L,date,"objetFacture","111","111","121212","description","statutFacture",1L,contatDeMarche,facture);
     Depense d2 = new Depense(51L,date,"objetFacture","111","111","121212","description","statutFacture",1L,contatDeMarche,facture);
+=======
+    Depense d1 = new Depense(11L,date,"objetFacture","111","111","121212","description","statutFacture",contatDeMarche,facture);
+    Depense d2 = new Depense(51L,date,"objetFacture","111","111","121212","description","statutFacture",contatDeMarche,facture);
+>>>>>>> 763fddc1fc727b9ebef5b02fcfeac6510d13db9f
 
     public DepenseJunitTest() throws ParseException {
     }

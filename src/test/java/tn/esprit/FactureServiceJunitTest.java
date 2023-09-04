@@ -19,8 +19,13 @@ public class FactureServiceJunitTest {
     SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
 
     Date date = sdf.parse("12-02-2023");
+<<<<<<< HEAD
     Facture f1 = new Facture(11L,"11111",date,date,date,date,date,date,date,date,date,date,date,1L);
     Facture f2 = new Facture(51L,"55111",date,date,date,date,date,date,date,date,date,date,date,1L);
+=======
+    Facture f1 = new Facture(11L,"11111",date,date,date,date,date,date,date,date,date,date,date);
+    Facture f2 = new Facture(51L,"55111",date,date,date,date,date,date,date,date,date,date,date);
+>>>>>>> 763fddc1fc727b9ebef5b02fcfeac6510d13db9f
 
     public FactureServiceJunitTest() throws ParseException {
     }
