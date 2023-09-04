@@ -27,13 +27,9 @@ public class ContratDeMarcheJunitTest {
     Date date = sdf.parse("12-02-2023");
 
 
-<<<<<<< HEAD
     ContatDeMarche c1 = new ContatDeMarche(11L,"2102","statutProjet","axeDemande","10000","30002","1234","21-02-2023","observation",date,date,date,1L,budget,fournisseur);
     ContatDeMarche c2 = new ContatDeMarche(51L,"2102","statutProjet","axeDemande","10000","30002","1234","21-02-2023","observation",date,date,date,1L,budget,fournisseur);
-=======
-    ContatDeMarche c1 = new ContatDeMarche(11L,"2102","statutProjet","axeDemande","10000","30002","1234","21-02-2023","observation",date,date,date,budget,fournisseur);
-    ContatDeMarche c2 = new ContatDeMarche(51L,"2102","statutProjet","axeDemande","10000","30002","1234","21-02-2023","observation",date,date,date,budget,fournisseur);
->>>>>>> 763fddc1fc727b9ebef5b02fcfeac6510d13db9f
+
 
     public ContratDeMarcheJunitTest() throws ParseException {
     }
