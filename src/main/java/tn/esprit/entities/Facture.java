@@ -79,5 +79,7 @@ public class Facture {
     @Column(name="Date2OrdonnancementDCD")
     Date Date2OrdonnancementDCD;
 
+    @Column(name="UserId")
+    Long userId;
 
 }

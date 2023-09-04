@@ -73,16 +73,18 @@ public class UserController {
     @ResponseBody
     public User DoLogin(@RequestBody LoginRequest er) {
         System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@");
-
         User e = Us.DoLogin(er.getMail(), er.getPassword());
         if (e != null && e.getToken()==null) {
             //String token = getJWTToken(er.getPassword());
             e.setToken(e.getId()+"Bearer"+e.getRole().toString());
         }
-
         return e;
     }
-
+    @GetMapping("/recover/{mail}")
+    void recver(@PathVariable("mail") String mail)
+    {
+        Us.recover(mail);
+    }
     /*
     private String getJWTToken(String username) {
         String secretKey = "mySecretKey";

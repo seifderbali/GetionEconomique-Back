@@ -33,6 +33,8 @@ public class Fournisseur {
     String siteWeb;
     @Column(name="tel")
     String tel;
+    @Column(name="UserId")
+    Long userId;
 /*
     @OneToMany(cascade = CascadeType.ALL,mappedBy="fournisseur")
     Set<ContatDeMarche> contatDeMarches;

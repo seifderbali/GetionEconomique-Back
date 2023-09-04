@@ -47,6 +47,9 @@ public class Depense {
     @Column(name="statutFacture")
     String statutFacture;
 
+    @Column(name="UserId")
+    Long userId;
+
     @ManyToOne
     //@JsonIgnore
     ContatDeMarche contrat;

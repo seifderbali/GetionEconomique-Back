@@ -21,6 +21,8 @@ public class EntiteSI {
     Long id;
     @Column(name="name")
     String name;
+    @Column(name="UserId")
+    Long userId;
 /*
     @OneToMany(cascade = CascadeType.ALL,mappedBy="entiteSI")
     Set<User> users;

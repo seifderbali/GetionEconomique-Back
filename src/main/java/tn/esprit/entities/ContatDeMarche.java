@@ -49,7 +49,8 @@ public class ContatDeMarche {
     @JsonFormat(pattern="yyyy-MM-dd")
     @Column(name="dateReceptionDefinitive")
     Date dateReceptionDefinitive;
-
+    @Column(name="UserId")
+    Long userId;
 
 
     @ManyToOne

@@ -24,9 +24,24 @@ public interface BudgetRepository extends CrudRepository<Budget, Long> {
 
     @Query("select b from Budget b where b.type = 'Investissement'")
     List<Budget> findAllBudgetInvestissement();
+    @Query("select b from Budget b where b.type = 'Investissement' ORDER BY b.anneebudgetaire DESC")
+    List<Budget> findAllBudgetInvestissementSortByDate();
+    @Query("select b from Budget b where b.type = 'Investissement' ORDER BY b.coutEtudeServ DESC")
+    List<Budget> findAllBudgetInvestissementSortByCoutEtudeServ();
+    @Query("select b from Budget b where b.type = 'Investissement' ORDER BY b.coutLogiciel DESC")
+    List<Budget> findAllBudgetInvestissementSortByCoutLogiciel();
+    @Query("select b from Budget b where b.type = 'Investissement' ORDER BY b.coutMateriel DESC")
+    List<Budget> findAllBudgetInvestissementSortByCoutMaterliel();
     @Query("select b from Budget b where b.type = 'Maintenance'")
     List<Budget> findAllBudgetMaintenance();
-
+    @Query("select b from Budget b where b.type = 'Maintenance' ORDER BY b.anneebudgetaire DESC")
+    List<Budget> findAllBudgetMaintenanceSortByDate();
+    @Query("select b from Budget b where b.type = 'Maintenance' ORDER BY b.coutEtudeServ DESC")
+    List<Budget> findAllBudgetMaintenanceSortByCoutEtudeServ();
+    @Query("select b from Budget b where b.type = 'Maintenance' ORDER BY b.coutLogiciel DESC")
+    List<Budget> findAllBudgetMaintenanceSortByCoutLogiciel();
+    @Query("select b from Budget b where b.type = 'Maintenance' ORDER BY b.coutMateriel DESC")
+    List<Budget> findAllBudgetMaintenanceSortByCoutMaterliel();
 
 
     @Query("select b from Budget b where b.type = 'Investissement' and b.entiteSI.id =:#{#id}")

@@ -24,6 +24,17 @@ public interface IBudgetService {
     List<Budget> findByEntiteMain(long id);
     List<Budget> findByEntiteInv(long id);
 
+
+    List<Budget> retreiveAllBudgetInvestissementSortByDate();
+    List<Budget> retreiveAllBudgetInvestissementSortByCoutEtudeServ();
+    List<Budget> retreiveAllBudgetInvestissementSortByCoutLogiciel();
+    List<Budget> retreiveAllBudgetInvestissementSortByCoutMateriel();
+
+    List<Budget> retreiveAllBudgetMaintenanceSortByDate();
+    List<Budget> retreiveAllBudgetMaintenanceSortByCoutEtudeServ();
+    List<Budget> retreiveAllBudgetMaintenanceSortByCoutLogiciel();
+    List<Budget> retreiveAllBudgetMaintenanceSortByCoutMateriel();
+
 }
 
 

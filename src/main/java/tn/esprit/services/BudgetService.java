@@ -196,5 +196,140 @@ public class BudgetService implements IBudgetService {
         return listBudgets;
     }
 
+    @Override
+    public List<Budget> retreiveAllBudgetInvestissementSortByDate() {
+        List<Budget> listBudgets = new ArrayList<Budget>();
+        try {
+            listBudgets = (List<Budget>) budgetRepository.findAllBudgetInvestissementSortByDate();
+            for(Budget b : listBudgets)
+            {
+                //   u.setUsers(null);
+                log.info("user = "+b);
+            }}
+        catch(Exception e)
+        {
+            log.info("error = "+e);
+        }
+
+        return listBudgets;    }
+
+    @Override
+    public List<Budget> retreiveAllBudgetInvestissementSortByCoutEtudeServ() {
+        List<Budget> listBudgets = new ArrayList<Budget>();
+        try {
+            listBudgets = (List<Budget>) budgetRepository.findAllBudgetInvestissementSortByCoutEtudeServ();
+            for(Budget b : listBudgets)
+            {
+                //   u.setUsers(null);
+                log.info("user = "+b);
+            }}
+        catch(Exception e)
+        {
+            log.info("error = "+e);
+        }
+
+        return listBudgets;    }
+
+    @Override
+    public List<Budget> retreiveAllBudgetInvestissementSortByCoutLogiciel() {
+        List<Budget> listBudgets = new ArrayList<Budget>();
+        try {
+            listBudgets = (List<Budget>) budgetRepository.findAllBudgetInvestissementSortByCoutLogiciel();
+            for(Budget b : listBudgets)
+            {
+                //   u.setUsers(null);
+                log.info("user = "+b);
+            }}
+        catch(Exception e)
+        {
+            log.info("error = "+e);
+        }
+
+        return listBudgets;    }
+
+    @Override
+    public List<Budget> retreiveAllBudgetInvestissementSortByCoutMateriel() {
+        List<Budget> listBudgets = new ArrayList<Budget>();
+        try {
+            listBudgets = (List<Budget>) budgetRepository.findAllBudgetInvestissementSortByCoutMaterliel();
+            for(Budget b : listBudgets)
+            {
+                //   u.setUsers(null);
+                log.info("user = "+b);
+            }}
+        catch(Exception e)
+        {
+            log.info("error = "+e);
+        }
+
+        return listBudgets;    }
+
+    @Override
+    public List<Budget> retreiveAllBudgetMaintenanceSortByDate() {
+        List<Budget> listBudgets = new ArrayList<Budget>();
+        try {
+            listBudgets = (List<Budget>) budgetRepository.findAllBudgetMaintenanceSortByDate();
+            for(Budget b : listBudgets)
+            {
+                //   u.setUsers(null);
+                log.info("user = "+b);
+            }}
+        catch(Exception e)
+        {
+            log.info("error = "+e);
+        }
+
+        return listBudgets;    }
+
+    @Override
+    public List<Budget> retreiveAllBudgetMaintenanceSortByCoutEtudeServ() {
+        List<Budget> listBudgets = new ArrayList<Budget>();
+        try {
+            listBudgets = (List<Budget>) budgetRepository.findAllBudgetMaintenanceSortByCoutEtudeServ();
+            for(Budget b : listBudgets)
+            {
+                //   u.setUsers(null);
+                log.info("user = "+b);
+            }}
+        catch(Exception e)
+        {
+            log.info("error = "+e);
+        }
+
+        return listBudgets;    }
+
+    @Override
+    public List<Budget> retreiveAllBudgetMaintenanceSortByCoutLogiciel() {
+        List<Budget> listBudgets = new ArrayList<Budget>();
+        try {
+            listBudgets = (List<Budget>) budgetRepository.findAllBudgetMaintenanceSortByCoutLogiciel();
+            for(Budget b : listBudgets)
+            {
+                //   u.setUsers(null);
+                log.info("user = "+b);
+            }}
+        catch(Exception e)
+        {
+            log.info("error = "+e);
+        }
+
+        return listBudgets;    }
+
+    @Override
+    public List<Budget> retreiveAllBudgetMaintenanceSortByCoutMateriel() {
+        List<Budget> listBudgets = new ArrayList<Budget>();
+        try {
+            listBudgets = (List<Budget>) budgetRepository.findAllBudgetMaintenanceSortByCoutMaterliel();
+            for(Budget b : listBudgets)
+            {
+                //   u.setUsers(null);
+                log.info("user = "+b);
+            }}
+        catch(Exception e)
+        {
+            log.info("error = "+e);
+        }
+
+        return listBudgets;    }
 
 }
