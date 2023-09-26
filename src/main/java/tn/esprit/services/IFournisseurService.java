@@ -1,8 +1,10 @@
 package tn.esprit.services;
 
 
+import com.google.zxing.WriterException;
 import tn.esprit.entities.Fournisseur;
 
+import java.io.IOException;
 import java.util.List;
 
 public interface IFournisseurService {
@@ -15,6 +17,8 @@ public interface IFournisseurService {
     List<Fournisseur> searchFournisseur(String keyword);
     Fournisseur findByContrat(long id);
     String findBudget(long id);
+    void generateQRCodeImage(String text,int id) throws WriterException, IOException;
+    String toStringg(long id);
 
 }
 

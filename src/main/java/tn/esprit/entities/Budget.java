@@ -39,6 +39,8 @@ public class Budget {
     String BudgetN3;
     @Column(name="Type")
     String type;
+    @Column(name="UserId")
+    Long userId;
     @ManyToOne
     // @JsonIgnore
     private EntiteSI entiteSI;

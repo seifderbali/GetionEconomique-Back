@@ -29,7 +29,8 @@ public class ComiteTechnique {
     String typeDemande;
     @Column(name="observationComite")
     String observationComite;
-
+    @Column(name="UserId")
+    Long userId;
 
     @OneToOne
     // @JsonIgnore

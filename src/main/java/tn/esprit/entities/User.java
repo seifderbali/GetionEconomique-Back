@@ -48,7 +48,8 @@ public class User implements Serializable {
     String direction;
     @Column(name="role")
     Role role;
-
+    @Column(name="UserId")
+    Long userId;
     @Transient
     String token;
 

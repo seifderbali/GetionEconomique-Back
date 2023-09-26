@@ -38,7 +38,8 @@ public class DateValidation {
     Date validationTechFinanciaire;
     @Column(name="decisionComiteTechFin")
     String decisionComiteTechFin;
-
+    @Column(name="UserId")
+    Long userId;
 /*
     @OneToOne(mappedBy = "dateValidation")
     //  @JsonIgnore

@@ -38,7 +38,8 @@ public class ProjetInvestissment {
     long quantite;
     @Column(name="prixUnitaireTTC")
     long prixUnitaireTTC;
-
+    @Column(name="UserId")
+    Long userId;
 
     @OneToOne
    // @JsonIgnore

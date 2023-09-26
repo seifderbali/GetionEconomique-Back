@@ -1,5 +1,10 @@
 package tn.esprit.services;
 
+import com.google.zxing.BarcodeFormat;
+import com.google.zxing.WriterException;
+import com.google.zxing.client.j2se.MatrixToImageWriter;
+import com.google.zxing.common.BitMatrix;
+import com.google.zxing.qrcode.QRCodeWriter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -7,6 +12,9 @@ import tn.esprit.entities.EntiteSI;
 import tn.esprit.entities.Fournisseur;
 import tn.esprit.repositories.FournisseurRepository;
 
+import java.io.IOException;
+import java.nio.file.FileSystems;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -111,4 +119,22 @@ public class FournisseurService implements IFournisseurService{
 
         return  fournisseurRepository.findBudget(id);
     }
+    @Override
+
+    public void generateQRCodeImage(String text,int id) throws WriterException, IOException {
+        QRCodeWriter qrCodeWriter = new QRCodeWriter();
+        BitMatrix bitMatrix = qrCodeWriter.encode(text, BarcodeFormat.QR_CODE, 350, 350);
+
+        Path path = FileSystems.getDefault().getPath("/Users/seif/Desktop/pfelast/Front/src/assets/img/QRCode"+String.valueOf(id)+".png");
+        MatrixToImageWriter.writeToPath(bitMatrix, "PNG", path);
+
+    }
+
+    @Override
+    public String toStringg(long id) {
+        Fournisseur f = new Fournisseur();
+        f=retrieveFournisseur(id);
+        return "Supplier \\n Name: "+f.getName()+"\\n Code: "+f.getCode()+"\\n Contact: "+f.getContact()+"\\n Mail:"+f.getMail()+"\\n Website: "+f.getSiteWeb()+"\\n Phone Number: "+f.getTel();
+    }
+
 }
