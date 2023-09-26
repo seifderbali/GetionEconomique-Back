@@ -14,6 +14,9 @@ public interface IUserService {
     List<User> searchUser(String keyword);
     User DoLogin(String  mail, String mdp);
     User recover(String mail);
+<<<<<<< HEAD
     void sendMeet(String[] mails, String name);
+=======
+>>>>>>> 4891e145863e5307dee80c29251c0241eb8316d2
 
 }

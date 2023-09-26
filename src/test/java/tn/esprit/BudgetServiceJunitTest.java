@@ -16,8 +16,18 @@ public class BudgetServiceJunitTest {
     @Autowired
     BudgetService budgetService;
     EntiteSI rntite =new EntiteSI();
+<<<<<<< HEAD
     Budget b1 = new Budget(11L,"libelle","21-02-2023","1222","10000","30002","1234","23000","100","1000","type",1L,rntite);
     Budget b2 = new Budget(51L,"libelle","21-02-2023","1222","10000","30002","1234","23000","100","1000","type",1L,rntite);
+=======
+<<<<<<< HEAD
+    Budget b1 = new Budget(11L,"libelle","21-02-2023","1222","10000","30002","1234","23000","100","1000","type",1L,rntite);
+    Budget b2 = new Budget(51L,"libelle","21-02-2023","1222","10000","30002","1234","23000","100","1000","type",1L,rntite);
+=======
+    Budget b1 = new Budget(11L,"libelle","21-02-2023","1222","10000","30002","1234","23000","100","1000","type",rntite);
+    Budget b2 = new Budget(51L,"libelle","21-02-2023","1222","10000","30002","1234","23000","100","1000","type",rntite);
+>>>>>>> 763fddc1fc727b9ebef5b02fcfeac6510d13db9f
+>>>>>>> 4891e145863e5307dee80c29251c0241eb8316d2
 
     @Test
     @Order(1)

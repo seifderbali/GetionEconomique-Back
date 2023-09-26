@@ -80,11 +80,20 @@ public class UserController {
         }
         return e;
     }
+<<<<<<< HEAD
     @GetMapping("/recover/{mail}")
+=======
+<<<<<<< HEAD
+    @GetMapping("/recover/{mail}")
+=======
+    @PostMapping("/recover/{mail}")
+>>>>>>> 763fddc1fc727b9ebef5b02fcfeac6510d13db9f
+>>>>>>> 4891e145863e5307dee80c29251c0241eb8316d2
     void recver(@PathVariable("mail") String mail)
     {
         Us.recover(mail);
     }
+<<<<<<< HEAD
 
     @PostMapping("/meet/{name}")
     void meet(@RequestBody String[] mails,@PathVariable("name") String name)
@@ -92,6 +101,8 @@ public class UserController {
         Us.sendMeet(mails, name);
     }
 
+=======
+>>>>>>> 4891e145863e5307dee80c29251c0241eb8316d2
     /*
     private String getJWTToken(String username) {
         String secretKey = "mySecretKey";

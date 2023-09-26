@@ -24,8 +24,18 @@ public class UserServiceJunitTest {
     Date date = sdf.parse("18-02-1997");
     Sexe sexe = Sexe.Male;
     Role role = Role.Admin;
+<<<<<<< HEAD
     User u1 = new User(11L,"seif","derbali",date,"derbaliseif97@gmail.com","1234","jendouba","tunis","1002222",sexe,"administration",role,1L,"Manager",rntite);
     User u2 = new User(11L,"seif","derbali",date,"derbaliseif97@gmail.com","1234","jendouba","tunis","1002222",sexe,"administration",role,1L,"Manager",rntite);
+=======
+<<<<<<< HEAD
+    User u1 = new User(11L,"seif","derbali",date,"derbaliseif97@gmail.com","1234","jendouba","tunis","1002222",sexe,"administration",role,1L,"Manager",rntite);
+    User u2 = new User(11L,"seif","derbali",date,"derbaliseif97@gmail.com","1234","jendouba","tunis","1002222",sexe,"administration",role,1L,"Manager",rntite);
+=======
+    User u1 = new User(11L,"seif","derbali",date,"derbaliseif97@gmail.com","1234","jendouba","tunis","1002222",sexe,"administration",role,"Manager",rntite);
+    User u2 = new User(11L,"seif","derbali",date,"derbaliseif97@gmail.com","1234","jendouba","tunis","1002222",sexe,"administration",role,"Manager",rntite);
+>>>>>>> 763fddc1fc727b9ebef5b02fcfeac6510d13db9f
+>>>>>>> 4891e145863e5307dee80c29251c0241eb8316d2
 
     public UserServiceJunitTest() throws ParseException {
     }

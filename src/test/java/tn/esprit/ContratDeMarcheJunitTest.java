@@ -30,6 +30,10 @@ public class ContratDeMarcheJunitTest {
     ContatDeMarche c1 = new ContatDeMarche(11L,"2102","statutProjet","axeDemande","10000","30002","1234","21-02-2023","observation",date,date,date,1L,budget,fournisseur);
     ContatDeMarche c2 = new ContatDeMarche(51L,"2102","statutProjet","axeDemande","10000","30002","1234","21-02-2023","observation",date,date,date,1L,budget,fournisseur);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4891e145863e5307dee80c29251c0241eb8316d2
     public ContratDeMarcheJunitTest() throws ParseException {
     }
 

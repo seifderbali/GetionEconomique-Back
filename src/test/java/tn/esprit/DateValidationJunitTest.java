@@ -20,8 +20,18 @@ public class DateValidationJunitTest {
 
     Date date = sdf.parse("12-02-2023");
 
+<<<<<<< HEAD
     DateValidation d1 = new DateValidation(11L,date,"statutProjet",date,"typeDemande",date,"decisionComiteTechFin",1L);
     DateValidation d2 = new DateValidation(11L,date,"statutProjet",date,"typeDemande",date,"decisionComiteTechFin",1L);
+=======
+<<<<<<< HEAD
+    DateValidation d1 = new DateValidation(11L,date,"statutProjet",date,"typeDemande",date,"decisionComiteTechFin",1L);
+    DateValidation d2 = new DateValidation(11L,date,"statutProjet",date,"typeDemande",date,"decisionComiteTechFin",1L);
+=======
+    DateValidation d1 = new DateValidation(11L,date,"statutProjet",date,"typeDemande",date,"decisionComiteTechFin");
+    DateValidation d2 = new DateValidation(11L,date,"statutProjet",date,"typeDemande",date,"decisionComiteTechFin");
+>>>>>>> 763fddc1fc727b9ebef5b02fcfeac6510d13db9f
+>>>>>>> 4891e145863e5307dee80c29251c0241eb8316d2
 
     public DateValidationJunitTest() throws ParseException {
     }

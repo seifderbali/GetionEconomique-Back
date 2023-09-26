@@ -19,7 +19,7 @@
 	<distributionManagement>
 		<repository>
 			<id>deploymentRepo</id>
-			<url>http://192.168.0.4:8081/repository/maven-releases/</url>
+			<url>http://192.168.1.14:8081/repository/maven-releases/</url>
 		</repository>
 	</distributionManagement>
 	<dependencies>
@@ -81,6 +81,7 @@
 			<version>8.27.0</version>
 		</dependency>
 		<dependency>
+<<<<<<< HEAD
 			<groupId>org.apache.velocity</groupId>
 			<artifactId>velocity</artifactId>
 			<version>1.7</version>
@@ -119,6 +120,13 @@
 			<version>20160810</version>
 		</dependency>
 
+=======
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>RELEASE</version>
+			<scope>test</scope>
+		</dependency>
+>>>>>>> 4891e145863e5307dee80c29251c0241eb8316d2
 	</dependencies>
 
 	<build>
